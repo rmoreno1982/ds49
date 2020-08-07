@@ -1,1 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.ds49 .navbar {
+    background: #4b2a79!important;
+}
+.ds49 .navbar a, .navbar li a {
+    color: #fff!important;
+}
+.ds49 .navbar a.dropdown-item {
+    color: #000!important;
+}
+.ds49 .jumbotron {
+    background: #f5f5f5;
+}
+.ds49 .navbar-brand::before {
+    content: '';
+    background: url("../images/line-head-title.jpg") top left no-repeat;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 10px;
+}
+.ds49 .navbar-brand h2 {
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: 400;
+}
+.ds49 .navbar-brand span {
+    font-size: 1.5em;
+    font-weight: 300;
+    background: #f9af3c;
+    color: #4b2b79;
+    padding: 2px 15px;
+}
+.logo-campana {
+    max-width: 320px;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    z-index: 99;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+.manual {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+#footer {
+    background: #0A132D url("../images/footer-trama-b.png") top center;
+}
+.redes li {
+    display: inline-block;
+    padding-right: 3px;
+    color: #84919F;
+    font-size: 1.3em;
+}
+.redes li a {
+    color: #84919F;
+    font-size: 1.5em;
+}
+.contacto {
+    color: #84919F;
+}
+.contacto a {
+    background: #d3175b;
+    padding: 7px;
+    color: #fff;
+}
+.login-or {
+    position: relative;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+}
+.hr-or {
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+@media (max-width: 1100px) {
+.logo-campana {
+    max-width: 320px;
+    left: 42%;
+    display: block;
+}
+}
+
+@media (max-width: 1000px) {
+.logo-campana {
+    max-width: 320px;
+    left: 35%;
+    display: block;
+}
+}
+
+@media (max-width: 800px) {
+.logo-campana {
+    max-width: 250px;
+    position: relative;
+    top: 0px;
+    left: 0;
+    display: block;
+}
+}
+
+.formulario{ padding: 1em 2em; border: 1px solid #ccc;margin-top: -1px; margin-bottom: 1em;}
+.title-section{border-bottom: 1px solid rgba(232,232,232,0.7); padding-bottom: 0.8em; margin-bottom: 0.8em; font-size: 1.4em; color: #4b2a79;}
+.control-display{border: 1px solid #ccc; padding: 0.5em; background: rgba(232,232,232,0.7)}
+.page-header h1{
+font-size: 2em;
+    font-weight: 400;
+    background: url("../images/linea_tit_h2.svg") left bottom no-repeat;
+    padding: 0 0 10px;
+    margin: 15px 0 10px 0;
+}
+.page-header small{font-size: 0.5em; display: block;}
+.ayuda-icono{cursor: pointer;}
+
+.form-horizontal{margin: 2em 0; padding: 1em; border-left: 8px solid #4b2b7940;}
+.control-label{font-weight: 500; margin-top: 1em;}
+.form-botones{margin-bottom: 1.2em;}
+
+.box-resumen{}
+.box-resumen .panel-title{font-size: 1.6em;font-weight: 200;}
+
+
+/************************** PASO A PASO *************************************/
+/************************** PASO A PASO *************************************/
+/************************** PASO A PASO *************************************/
+/************************** PASO A PASO *************************************/
+/************************** PASO A PASO *************************************/
+/************************** PASO A PASO *************************************/
+/************************** PASO A PASO *************************************/
+
+.wizard {margin-top: 2em;}
+.process .nav-tabs {
+        position: relative;
+        margin-bottom: 0;
+}
+
+.process-step a:focus{outline:none}
+.process{display:table;width:100%;position:relative}
+.process-row{display:table-row}
+.process-step{display:table-cell;text-align:center;position:relative;width: 20%;}
+.process-step a.active{background: #eb5c28!important; color: #fff!important;border-color: #c78723!important;border-radius: 0px; position: relative;} 
+.process-step a{
+    color: #B2B2B2!important;
+} 
+.wizard .tab-content{ padding: 0 1em;}
+
+.process-step a {font-size: 2em;}
+.process-step a small{font-size: 14px; display:block;}
+
+.process-step a.active:after, .process-step a.active:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.process-step a.active:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #eb5c28;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.process-step a.active:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: #eb5c28;
+	border-width: 16px;
+	margin-left: -16px;
+	z-index: 999;
+}
 
