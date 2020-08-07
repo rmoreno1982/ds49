@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal de Postulación</title>
+<link rel="icon" type="image/png" href="images/favicon.ico" />
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/all.css" rel="stylesheet">
+<link href="css/ds49.css" rel="stylesheet">
+<!--load all styles --> 
+<script defer src="js/all.js"></script> <!--load all styles --> 
+<script defer src="js/step.js"></script> <!--load all styles -->
+
+</head>
+<body>
+<div class="ds49">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary"> <a class="navbar-brand" href="#">
+    <h2>Subsidio D.S. N°49</h2>
+    <span>Postulación en línea</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-end w-100">
+        <li class="nav-item dropdown pt-2"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> KAREN ALEJANDRA CÁCERES RUBIO </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Salir</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link manual" href="#"><i class="fas fa-info-circle"></i> Manual de Postulacion</a> </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- body code goes here -->
+  
+  <div class="container-fluid">
+    <div class="alert alert-warning alert-dismissible mt-4" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      <strong>¡Importante!</strong> <br>
+      Usted dispone de 15 minutos para completar su postulación, de lo contrario deberá ingresar nuevamente y continuar. Si los datos desplegados no coinciden con su realidad, debe acercarse al SERVIU más cercano reservando su hora <strong><a href="http://portalsiac.minvu.cl/" target="_blank">aquí</a></strong>. </div>
+    <div class="wizard">
+      <div class="wizard-inner">
+        <div class="process">
+          <ul class="process-row nav nav-tabs" id="myTab" role="tablist">
+            <li class="process-step nav-item"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Paso 1<small>Información del Postulante</small></a> </li>
+            <li class="process-step nav-item"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Paso 2<small>Registro Social de Hogares y Nucleo Familiar </small></a> </li>
+            <li class="process-step nav-item"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Paso 3<small>Ahorro del Postulante</small></a> </li>
+            <li class="process-step nav-item"> <a class="nav-link" id="paso4-tab" data-toggle="tab" href="#paso4" role="tab" aria-controls="paso4" aria-selected="false">Paso 4<small>Acreditaciones</small></a> </li>
+            <li class="process-step nav-item"> <a class="nav-link" id="resumen-tab" data-toggle="tab" href="#resumen" role="tab" aria-controls="resumen" aria-selected="false">Paso 5<small>Resumen de la postulación</small></a> </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+            <!-- PASO 1 -->
+            
+            <div class="row">
+              <div class="col col-sm-12 col-md-12 formulario">
+                <div class="page-header mb-4">
+                  <h1>Información del Postulante <small> Los datos que se detallan son obtenidos directamente desde el Servicio de Registro Civil e Identificación.</small></h1>
+                </div>
+                <form action="/FormularioIdentificacion" id="formIdentificacion" method="post" novalidate="novalidate">
+                  <input name="__RequestVerificationToken" type="hidden" value="omag-gz8mYgbO1-LiHlnfvEPBbjcwjBT6i38K4iFtDfYd3Mu2aOaqEJqlIcCMpLESWdzwrKfzXZZXzW9VOFDW8C-QXqQsfBuQNr-EnMUGBRbQipfGaYhQCdAkHo0097aZlFKHrDfW--tos3RFzReMg2">
+                  <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+                  <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                          <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                            <ul>
+                              <li style="display:none"></li>
+                            </ul>
+                          </div>
+                          <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <input data-val="true" data-val-required="Los nombres son obligatorio." id="Persona_Nombres" name="Persona.Nombres" type="hidden" value="KAREN ALEJANDRA">
+                  <input data-val="true" data-val-required="El apellido paterno es obligatorio." id="Persona_ApellidoPaterno" name="Persona.ApellidoPaterno" type="hidden" value="CÁCERES">
+                  <input id="Persona_ApellidoMaterno" name="Persona.ApellidoMaterno" type="hidden" value="RUBIO">
+                  <input data-val="true" data-val-required="El genero es obligatorio." id="Persona_Sexo" name="Persona.Sexo" type="hidden" value="Femenino">
+                  <div class="form-horizontal shadow bg-white rounded">
+                    <h3 class="title-section">Información del Postulante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group row">
+                      <div class="col-md-4">
+                        <label class="control-label" for="Persona_Rut_RutCompleto">Rut: </label>
+                        <div class="control-display"> 17135456-0 </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Persona_NombreCompleto">Nombre: </label>
+                        <div class="control-display"> KAREN ALEJANDRA CÁCERES RUBIO </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Persona_EstadoCivil">Estado Civil: </label>
+                        <div class="control-display"> Soltero/a </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Persona_FechaNacimiento">Fecha de nacimiento: </label>
+                        <div class="control-display"> 25-01-1989 </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Persona_Sexo">Género: </label>
+                        <div class="control-display"> Femenino </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Persona_Nacionalidad">Nacionalidad: </label>
+                        <div class="control-display"> Chilena </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                
+                <!-- Formulario del paso 2 que se agrega al paso 1 -->
+                
+                <form action="/FormularioContacto" id="formContacto" method="post" novalidate="novalidate">
+                  <input name="__RequestVerificationToken" type="hidden" value="CzzAAE0z7YFRxbaysPo7eVpp8Z1oowr0W-zFDqCF0Ce0SjFUNGPX0geieXTVDvz98YAkUyZVN0f4s6sum3Dg4mHPWkqe1GetfAvNdR2h3FFdZ485tQc13TLAQpiRWf7-2hcEgGUJa29FjbryOE-1Cg2">
+                  <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+                  <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                          <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                            <ul>
+                              <li style="display:none"></li>
+                            </ul>
+                          </div>
+                          <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal shadow bg-white rounded">
+                    <h3 class="title-section">Domicilio <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group row">
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_Calle">Calle (*): </label>
+                        <input class="form-control" data-val="true" data-val-regex="Existen caracteres inválidos." data-val-regex-pattern="(^[0-9A-ZñÑáéíóúüÁÉÍÓÚÜ'´\-\.\,\'a-z ]+$)" data-val-required="La calle es obligatoria." id="Domicilio_Calle" maxlength="50" name="Domicilio.Calle" type="text" value="CALLE, SEBASTIAN ELCANO ">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Domicilio.Calle" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_Numero">Número (*): </label>
+                        <input class="form-control" data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-ZñÑ\-a-z ]*$)" data-val-required="El número es obligatorio." id="Domicilio_Numero" maxlength="9" name="Domicilio.Numero" type="text" value="112">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Domicilio.Numero" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_Departamento">Departamento: </label>
+                        <input class="form-control" data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-ZñÑ\-a-z ]*$)" id="Domicilio_Departamento" maxlength="20" name="Domicilio.Departamento" type="text" value="">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Domicilio.Departamento" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_Block">Block: </label>
+                        <input class="form-control" data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-ZñÑ\-a-z ]*$)" id="Domicilio_Block" maxlength="10" name="Domicilio.Block" type="text" value="">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Domicilio.Block" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_Manzana">Manzana: </label>
+                        <input class="form-control" data-val="true" data-val-regex="Existen caracteres inválidos." data-val-regex-pattern="(^[0-9A-ZñÑáéíóúüÁÉÍÓÚÜ'´\-\.\,\'a-z ]+$)" id="Domicilio_Manzana" maxlength="50" name="Domicilio.Manzana" type="text" value="">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Domicilio.Manzana" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_Sitio">Sitio: </label>
+                        <input class="form-control" data-val="true" data-val-regex="Existen caracteres inválidos." data-val-regex-pattern="(^[0-9A-ZñÑáéíóúüÁÉÍÓÚÜ'´\-\.\,\'a-z ]+$)" id="Domicilio_Sitio" maxlength="50" name="Domicilio.Sitio" type="text" value="">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Domicilio.Sitio" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_idRegion">Región (*): </label>
+                        <select class="form-control" data-val="true" data-val-number="The field Región (*):  must be a number." data-val-required="La región es obligatoria." id="Domicilio_idRegion" name="Domicilio.idRegion" onchange="getComunas(this)">
+                          <option value="">-- Seleccione Región --</option>
+                          <option value="1">REGIÓN DE TARAPACÁ</option>
+                          <option value="2">REGIÓN DE ANTOFAGASTA</option>
+                          <option value="3">REGIÓN DE ATACAMA</option>
+                          <option value="4">REGIÓN DE COQUIMBO</option>
+                          <option value="5">REGIÓN DE VALPARAÍSO</option>
+                          <option selected="selected" value="6">REGIÓN DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS</option>
+                          <option value="7">REGIÓN DEL MAULE</option>
+                          <option value="8">REGIÓN DEL BIOBÍO</option>
+                          <option value="9">REGIÓN DE LA ARAUCANÍA</option>
+                          <option value="10">REGIÓN DE LOS LAGOS</option>
+                          <option value="11">REGIÓN DE AYSÉN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO</option>
+                          <option value="12">REGIÓN DE MAGALLANES Y ANTÁRTICA CHILENA</option>
+                          <option value="13">REGIÓN METROPOLITANA DE SANTIAGO</option>
+                          <option value="14">REGIÓN DE LOS RÍOS</option>
+                          <option value="15">REGIÓN DE ARICA Y PARINACOTA</option>
+                          <option value="16">REGIÓN DE ÑUBLE</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Domicilio_idComuna">Comuna (*): </label>
+                        <select class="form-control" data-val="true" data-val-number="The field Comuna (*):  must be a number." data-val-required="La comuna es obligatoria." id="ddlComuna" name="Domicilio.idComuna">
+                          <option value="">-- Seleccione Comuna --</option>
+                          <option value="6302">CHEPICA</option>
+                          <option value="6303">CHIMBARONGO</option>
+                          <option value="6102">CODEGUA</option>
+                          <option value="6103">COINCO</option>
+                          <option value="6104">COLTAUCO</option>
+                          <option value="6105">DOÑIHUE</option>
+                          <option value="6106">GRANEROS</option>
+                          <option value="6202">LA ESTRELLA</option>
+                          <option value="6107">LAS CABRAS</option>
+                          <option value="6203">LITUECHE</option>
+                          <option value="6304">LOLOL</option>
+                          <option value="6108">MACHALI</option>
+                          <option value="6109">MALLOA</option>
+                          <option value="">MARCHIHUE</option>
+                          <option value="6110">MOSTAZAL</option>
+                          <option value="6305">NANCAGUA</option>
+                          <option value="6205">NAVIDAD</option>
+                          <option value="6111">OLIVAR</option>
+                          <option value="6306">PALMILLA</option>
+                          <option value="6206">PAREDONES</option>
+                          <option value="6307">PERALILLO</option>
+                          <option value="6112">PEUMO</option>
+                          <option value="6113">PICHIDEGUA</option>
+                          <option value="6201">PICHILEMU</option>
+                          <option value="6308">PLACILLA</option>
+                          <option value="6309">PUMANQUE</option>
+                          <option value="6114">QUINTA DE TILCOCO</option>
+                          <option selected="selected" value="6101">RANCAGUA</option>
+                          <option value="6115">RENGO</option>
+                          <option value="6116">REQUINOA</option>
+                          <option value="6301">SAN FERNANDO</option>
+                          <option value="6117">SAN VICENTE</option>
+                          <option value="6310">SANTA CRUZ</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal shadow bg-white rounded">
+                    <h3 class="title-section">Contacto <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group row">
+                      <div class="col-md-4">
+                        <label class="control-label" for="Contacto_TelefonoTrabajo">Teléfono de trabajo (**): </label>
+                        <input class="form-control" data-val="true" data-val-phone="Ingrese un teléfono de trabajo válido." id="Contacto_TelefonoTrabajo" maxlength="9" name="Contacto.TelefonoTrabajo" type="text" value="">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Contacto.TelefonoTrabajo" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Contacto_TelefonoMovil">Teléfono móvil (**): </label>
+                        <input class="form-control" data-val="true" data-val-phone="Ingrese un teléfono móvil válido." id="Contacto_TelefonoMovil" maxlength="9" name="Contacto.TelefonoMovil" type="text" value="975939186">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Contacto.TelefonoMovil" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Contacto_TelefonoDomicilio">Teléfono de domicilio (**): </label>
+                        <input class="form-control" data-val="true" data-val-phone="Ingrese un teléfono de domicilio válido." id="Contacto_TelefonoDomicilio" maxlength="9" name="Contacto.TelefonoDomicilio" type="text" value="">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Contacto.TelefonoDomicilio" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Contacto_Email">E-Mail (*): </label>
+                        <input class="form-control" data-val="true" data-val-email="Ingrese un E-mail válido." data-val-required="El correo es obligatorio." id="txtEmail" maxlength="70" name="Contacto.Email" type="text" value="ncousino@minvu.cl">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Contacto.Email" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="control-label" for="Contacto_ConfirmacionEmail">Confirmar E-Mail (*): </label>
+                        <input class="form-control" data-val="true" data-val-equalto="Los correos deben ser idénticos." data-val-equalto-other="*.Email" id="Contacto_ConfirmacionEmail" maxlength="70" name="Contacto.ConfirmacionEmail" onpaste="return false" type="text" value="ncousino@minvu.cl">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Contacto.ConfirmacionEmail" data-valmsg-replace="true"></span></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-12"> (*) Dato obligatorio.
+                        (**) Al menos un dato obligatorio. </div>
+                    </div>
+                  </div>
+                  <div class="form-botones text-center"> <a href="/FormularioPortal" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
+                    <input type="submit" value="Guardar y Continuar" class="btn-lg btn btn-primary">
+                  </div>
+                </form>
+                
+                <!-- FIN Formulario del paso 2 que se agrega al paso 1 --> 
+                
+              </div>
+              <!-- Fin PASO 1 --> 
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              <div class="col col-sm-12 col-md-12 formulario">
+                <div class="page-header mb-4">
+                  <h1>Registro Social de Hogares y Nucleo Familiar <small> Debe seleccionar la región de preferencia y declarar a los integrantes de su núcleo familiar.</small></h1>
+                </div>
+                <form action="/FormularioNucleo" id="formNucleo" method="post" novalidate="novalidate">
+                  <input name="__RequestVerificationToken" type="hidden" value="wzBDAo7Q-AJjUcMrDBVtSvYUzpn3OZ0ifXJqRTEeC5vo9T5abEYLEPqjIIKOdfX3VBb2B0ql0y3IKJPqZtoDam9KTcvkpBv3C0u0PFKEhjzDGIRihOMY-RW_dwR_S-s2lCnFPWq2IfjLXErfBB0O-A2">
+                  <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+                  <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                          <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                            <ul>
+                              <li style="display:none"></li>
+                            </ul>
+                          </div>
+                          <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal shadow bg-white rounded">
+                    <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label class="control-label col-md-4" for="DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
+                        <div class="control-display col-md-8"> D.S. 49, (V. y U.) de 2011 </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="DatosPostulacion_Modalidad">Modalidad de postulación: </label>
+                        <div class="control-display"> Adquisición de Vivienda Construida </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="DatosPostulacion_idRegion">Región de preferencia (*): </label>
+                        <select class="form-control" data-val="true" data-val-number="The field Región de preferencia (*):  must be a number." data-val-required="La región es obligatoria." id="DatosPostulacion_idRegion" name="DatosPostulacion.idRegion" onchange="getComunas(this);">
+                          <option value="">-- Seleccione Región --</option>
+                          <option selected="selected" value="1">REGIÓN DE TARAPACÁ</option>
+                          <option value="2">REGIÓN DE ANTOFAGASTA</option>
+                          <option value="3">REGIÓN DE ATACAMA</option>
+                          <option value="4">REGIÓN DE COQUIMBO</option>
+                          <option value="5">REGIÓN DE VALPARAÍSO</option>
+                          <option value="6">REGIÓN DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS</option>
+                          <option value="7">REGIÓN DEL MAULE</option>
+                          <option value="8">REGIÓN DEL BIOBÍO</option>
+                          <option value="9">REGIÓN DE LA ARAUCANÍA</option>
+                          <option value="10">REGIÓN DE LOS LAGOS</option>
+                          <option value="11">REGIÓN DE AYSÉN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO</option>
+                          <option value="12">REGIÓN DE MAGALLANES Y ANTÁRTICA CHILENA</option>
+                          <option value="13">REGIÓN METROPOLITANA DE SANTIAGO</option>
+                          <option value="14">REGIÓN DE LOS RÍOS</option>
+                          <option value="15">REGIÓN DE ARICA Y PARINACOTA</option>
+                          <option value="16">REGIÓN DE ÑUBLE</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="DatosPostulacion_idComuna">Comuna (*): </label>
+                        <select class="form-control" data-val="true" data-val-number="The field Comuna (*):  must be a number." data-val-required="La comuna es obligatoria (sólo es dato informativo)." id="ddlComuna" name="DatosPostulacion.idComuna">
+                          <option value="">-- Seleccione Comuna --</option>
+                          <option selected="selected" value="1107">ALTO HOSPICIO</option>
+                          <option value="1402">CAMIÑA</option>
+                          <option value="1403">COLCHANE</option>
+                          <option value="1404">HUARA</option>
+                          <option value="1101">IQUIQUE</option>
+                          <option value="1405">PICA</option>
+                          <option value="1401">POZO ALMONTE</option>
+                        </select>
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="DatosPostulacion.idComuna" data-valmsg-replace="true"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal shadow bg-white rounded">
+                    <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label class="control-label" for="Rsh_TramoCSE">Tramo Calificación Socioeconómica: </label>
+                        <div class="control-display"> 40 </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="Rsh_Region">Región: </label>
+                        <div class="control-display"> LIBERTADOR GRAL B.O'HIGGINS </div>
+                      </div>
+                      <div class="col-md-12"> (*) Dato obligatorio. </div>
+                    </div>
+                  </div>
+                  <h3 class="title-section">Núcleo Familiar <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                  <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <strong>¡Importante!</strong> <br>
+                    Para incorporar a los integrantes de su núcleo familiar debe ingresar un código de verificación que corresponde a la serie al reverso de cada cédula de identidad. <br>
+                    Si ya ha ingresado anteriormente a un integrante del núcleo familiar no es necesario que vuelva a ingresar el código de verificación. <br>
+                    Para incorporar a los integrantes de su núcleo familiar que sean hijos menores de edad no es necesario obtener la serie de su cédula de identidad. <br>
+                    Si usted se encuentra en una de las siguientes situaciones, deberá realizar su postulación en forma presencial, con los antecedentes requeridos para cada caso, directamente en algún SERVIU de las regiones que estén convocadas en el llamado: <br>
+                    -	Si Usted o uno de los integrantes de su núcleo familiar pertenece a Cuerpo de Bomberos. <br>
+                    -	Si Usted postula sin acreditar núcleo familiar y cuenta con apellido indígena. <br>
+                    -	Si Usted o su cónyuge o conviviente civil, es funcionario de Gendarmería de Chile </div>
+                  <div class="table-responsive" id="nucleoFamiliar">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th> Rut </th>
+                          <th> Nombre </th>
+                          <th> Edad </th>
+                          <th> Discapacidad </th>
+                          <th> Parentesco </th>
+                          <th> Incluir al Núcleo </th>
+                          <th> Serie <span id="infoCI" class="glyphicon glyphicon-info-sign" data-original-title="" title=""></span> </th>
+                          <th> Cuerpo de Bomberos / Gendarmería </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <input data-val="true" data-val-required="Los nombres son obligatorio." id="Integrantes_0__Nombres" name="Integrantes[0].Nombres" type="hidden" value="KAREN ALEJANDRA">
+                      <input data-val="true" data-val-length="El largo máximo son 12 caracteres." data-val-length-max="12" data-val-regex="El rut ingresado no es válido." data-val-regex-pattern="^0*(\d{1,3}(\d{3})*)\-([\dkK])" data-val-required="El rut es obligatorio." id="Integrantes_0__Rut_RutCompleto" name="Integrantes[0].Rut.RutCompleto" type="hidden" value="17135456-0">
+                      <input id="Integrantes_0__ApellidoMaterno" name="Integrantes[0].ApellidoMaterno" type="hidden" value="RUBIO">
+                      <input data-val="true" data-val-required="El apellido paterno es obligatorio." id="Integrantes_0__ApellidoPaterno" name="Integrantes[0].ApellidoPaterno" type="hidden" value="CÁCERES">
+                      <input id="Integrantes_0__EstadoCivil" name="Integrantes[0].EstadoCivil" type="hidden" value="Soltero/a">
+                      <input data-val="true" data-val-required="El genero es obligatorio." id="Integrantes_0__Sexo" name="Integrantes[0].Sexo" type="hidden" value="Femenino">
+                      <input data-val="true" data-val-date="The field Fecha de nacimiento:  must be a date." data-val-required="La fecha de nacimiento es obligatoria." id="Integrantes_0__FechaNacimiento" name="Integrantes[0].FechaNacimiento" type="hidden" value="25-01-1989 0:00:00">
+                      <input data-val="true" data-val-number="The field idNacionalidad must be a number." id="Integrantes_0__idNacionalidad" name="Integrantes[0].idNacionalidad" type="hidden" value="56">
+                      <tr>
+                        <td> 17135456-0 </td>
+                        <td> KAREN ALEJANDRA CÁCERES RUBIO </td>
+                        <td> 31 </td>
+                        <td> No </td>
+                        <td> Postulante
+                          <input data-val="true" data-val-number="The field idParentesco must be a number." data-val-required="The idParentesco field is required." id="Integrantes_0__idParentesco" name="Integrantes[0].idParentesco" type="hidden" value="17"></td>
+                        <td><input type="checkbox" disabled="disabled" checked=""></td>
+                        <td><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_0" name="Integrantes[0].SerieCedula" style="display:none;" type="text" value="">
+                          <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Integrantes[0].SerieCedula" data-valmsg-replace="true"></span></div></td>
+                        <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+                      </tr>
+                      <input data-val="true" data-val-required="Los nombres son obligatorio." id="Integrantes_1__Nombres" name="Integrantes[1].Nombres" type="hidden" value="SEBASTIÁN IGNACIO">
+                      <input data-val="true" data-val-length="El largo máximo son 12 caracteres." data-val-length-max="12" data-val-regex="El rut ingresado no es válido." data-val-regex-pattern="^0*(\d{1,3}(\d{3})*)\-([\dkK])" data-val-required="El rut es obligatorio." id="Integrantes_1__Rut_RutCompleto" name="Integrantes[1].Rut.RutCompleto" type="hidden" value="23376873-1">
+                      <input id="Integrantes_1__ApellidoMaterno" name="Integrantes[1].ApellidoMaterno" type="hidden" value="CÁCERES">
+                      <input data-val="true" data-val-required="El apellido paterno es obligatorio." id="Integrantes_1__ApellidoPaterno" name="Integrantes[1].ApellidoPaterno" type="hidden" value="CASTRO">
+                      <input id="Integrantes_1__EstadoCivil" name="Integrantes[1].EstadoCivil" type="hidden" value="Soltero/a">
+                      <input data-val="true" data-val-required="El genero es obligatorio." id="Integrantes_1__Sexo" name="Integrantes[1].Sexo" type="hidden" value="Masculino">
+                      <input data-val="true" data-val-date="The field Fecha de nacimiento:  must be a date." data-val-required="La fecha de nacimiento es obligatoria." id="Integrantes_1__FechaNacimiento" name="Integrantes[1].FechaNacimiento" type="hidden" value="18-07-2010 0:00:00">
+                      <input data-val="true" data-val-number="The field idNacionalidad must be a number." id="Integrantes_1__idNacionalidad" name="Integrantes[1].idNacionalidad" type="hidden" value="56">
+                      <tr>
+                        <td> 23376873-1 </td>
+                        <td> SEBASTIÁN IGNACIO CASTRO CÁCERES </td>
+                        <td> 10 </td>
+                        <td> No </td>
+                        <td> Hijo(a)
+                          <input data-val="true" data-val-number="The field idParentesco must be a number." data-val-required="The idParentesco field is required." id="Integrantes_1__idParentesco" name="Integrantes[1].idParentesco" type="hidden" value="3"></td>
+                        <td><input data-val="true" data-val-required="The IncorporacionNucleo field is required." id="chk_Integrante_1" name="Integrantes[1].IncorporacionNucleo" onclick="modificarIncluir(this,1)" type="checkbox" value="true">
+                          <input name="Integrantes[1].IncorporacionNucleo" type="hidden" value="false"></td>
+                        <td><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_1" name="Integrantes[1].SerieCedula" style="display:none;" type="text" value="">
+                          <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Integrantes[1].SerieCedula" data-valmsg-replace="true"></span></div></td>
+                        <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+                      </tr>
+                      <input data-val="true" data-val-required="Los nombres son obligatorio." id="Integrantes_2__Nombres" name="Integrantes[2].Nombres" type="hidden" value="DANIEL ALEJANDRO">
+                      <input data-val="true" data-val-length="El largo máximo son 12 caracteres." data-val-length-max="12" data-val-regex="El rut ingresado no es válido." data-val-regex-pattern="^0*(\d{1,3}(\d{3})*)\-([\dkK])" data-val-required="El rut es obligatorio." id="Integrantes_2__Rut_RutCompleto" name="Integrantes[2].Rut.RutCompleto" type="hidden" value="24941956-7">
+                      <input id="Integrantes_2__ApellidoMaterno" name="Integrantes[2].ApellidoMaterno" type="hidden" value="CÁCERES">
+                      <input data-val="true" data-val-required="El apellido paterno es obligatorio." id="Integrantes_2__ApellidoPaterno" name="Integrantes[2].ApellidoPaterno" type="hidden" value="CASTRO">
+                      <input id="Integrantes_2__EstadoCivil" name="Integrantes[2].EstadoCivil" type="hidden" value="Soltero/a">
+                      <input data-val="true" data-val-required="El genero es obligatorio." id="Integrantes_2__Sexo" name="Integrantes[2].Sexo" type="hidden" value="Masculino">
+                      <input data-val="true" data-val-date="The field Fecha de nacimiento:  must be a date." data-val-required="La fecha de nacimiento es obligatoria." id="Integrantes_2__FechaNacimiento" name="Integrantes[2].FechaNacimiento" type="hidden" value="28-03-2015 0:00:00">
+                      <input data-val="true" data-val-number="The field idNacionalidad must be a number." id="Integrantes_2__idNacionalidad" name="Integrantes[2].idNacionalidad" type="hidden" value="56">
+                      <tr>
+                        <td> 24941956-7 </td>
+                        <td> DANIEL ALEJANDRO CASTRO CÁCERES </td>
+                        <td> 5 </td>
+                        <td> No </td>
+                        <td> Hijo(a)
+                          <input data-val="true" data-val-number="The field idParentesco must be a number." data-val-required="The idParentesco field is required." id="Integrantes_2__idParentesco" name="Integrantes[2].idParentesco" type="hidden" value="3"></td>
+                        <td><input data-val="true" data-val-required="The IncorporacionNucleo field is required." id="chk_Integrante_2" name="Integrantes[2].IncorporacionNucleo" onclick="modificarIncluir(this,2)" type="checkbox" value="true">
+                          <input name="Integrantes[2].IncorporacionNucleo" type="hidden" value="false"></td>
+                        <td><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_2" name="Integrantes[2].SerieCedula" style="display:none;" type="text" value="">
+                          <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Integrantes[2].SerieCedula" data-valmsg-replace="true"></span></div></td>
+                        <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+                      </tr>
+                      </tbody>
+                      
+                    </table>
+                  </div>
+                  <div class="form-botones text-center"> <a href="/FormularioContacto" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
+                    <input type="submit" value="Guardar y Continuar" class="btn-lg btn btn-primary">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row">
+              <div class="col col-sm-12 col-md-12 formulario">
+                <div class="page-header mb-4">
+                  <h1>Ahorro del Postulante<small> Debe declarar el ahorro, que corresponde a lo informado por su entidad financiera.</small></h1>
+                </div>
+                <form action="/FormularioAhorro" id="formAhorro" method="post" novalidate="novalidate">
+                  <input name="__RequestVerificationToken" type="hidden" value="woqaDeV5PFuaAGMs0g3HzsUTu8kugBQD8fDc78FHaiulzAx5dV779QfILayIsZDD1UGRB8fUa-Wsxn8NNE0CRn79qTw6N9KH7Fee17Eq56_zVbJCR3aajCqHxsfTS7hq2WfVI9KIE9-rsvQ9oN2Sig2">
+                  <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+                  <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                          <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                            <ul>
+                              <li style="display:none"></li>
+                            </ul>
+                          </div>
+                          <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal shadow bg-white rounded" id="idAhorro">
+                    <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label class="control-label" for="Ahorro_IdEntidadFinanciera">Entidad financiera (*): </label>
+                        <select class="form-control" data-val="true" data-val-number="The field Entidad financiera (*):  must be a number." data-val-required="La entidad financiera es obligatoria." id="ddlInstitucion" name="Ahorro.IdEntidadFinanciera" onchange="limpiarInformacion()">
+                          <option value="">-- Seleccione Institución --</option>
+                          <option selected="selected" value="3">Banco Estado</option>
+                          <option value="2">Banco Scotiabank / Del Desarrollo</option>
+                          <option value="5">Caja los Andes</option>
+                          <option value="4">Cooperativa De Ahorro Y Credito Coopeuch</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="Ahorro_NumeroCuenta">Número de cuenta (*): </label>
+                        <input class="form-control" data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" data-val-required="El número de cuenta es obligatorio." id="txtNumeroCuenta" maxlength="20" name="Ahorro.NumeroCuenta" type="text" value="38163443306">
+                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Ahorro.NumeroCuenta" data-valmsg-replace="true"></span></div>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="Ahorro_FechaApertura">Fecha apertura: </label>
+                        <input value="03-07-2012" class="form-control" data-val="true" data-val-date="The field Fecha apertura:  must be a date." id="txtFechaApertura" name="Ahorro.FechaApertura" onfocus="this.blur()" readonly="readonly" type="text">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="Ahorro_AhorroMinimo">Ahorro Mínimo: </label>
+                        <input class="form-control" data-val="true" data-val-number="The field Ahorro Mínimo:  must be a number." id="txtAhorroMinimo" name="Ahorro.AhorroMinimo" onfocus="this.blur()" readonly="readonly" type="text" value="10">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="Ahorro_SaldoCuentaMes">UF mes: </label>
+                        <input class="form-control" id="txtSaldoMes" name="Ahorro.SaldoCuentaMes" onfocus="this.blur()" readonly="readonly" type="text" value="30,822">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label" for="Ahorro_SaldoCuentaDia">UF día: </label>
+                        <input class="form-control" id="txtSaldoDia" name="Ahorro.SaldoCuentaDia" onfocus="this.blur()" readonly="readonly" type="text" value="30,826">
+                      </div>
+                    </div>
+                    <div class="col-md-12"> (*) Dato obligatorio. </div>
+                    <div class="col-md-12 text-center">
+                      <input type="button" value="Consultar" class="btn-lg btn btn-info" onclick="consultar()">
+                    </div>
+                  </div>
+                  <div class="form-botones text-center"> <a href="/FormularioNucleo" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
+                    <input type="submit" value="Guardar y Continuar" class="btn-lg btn btn-primary">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="paso4" role="tabpanel" aria-labelledby="paso4-tab">
+            <div class="row">
+              <div class="col col-sm-12 col-md-12 formulario">
+                <div class="page-header mb-4">
+                  <h1>Acreditaciones<small> Las acreditaciones desplegadas corresponden a lo informado por la Dirección general de movilización nacional y Comisión Valech.</small></h1>
+                </div>
+                <form action="/FormularioAcreditaciones" id="formAcreditaciones" method="post" novalidate="novalidate">
+                  <input name="__RequestVerificationToken" type="hidden" value="LE2H0VTwlA5n9x_v1x0OXnMsqRQHpFEm4RxN03OXMIOsN4tgHVK1nQ5i7QiBEftOQI4QJi2Wrm5QOrHcvpqI_3JuCg_eAHdvX1d7K536PGGaYBlEmPTvwamOYWSCtZ57B3TofNiDArs6Bm7NXrSEKg2">
+                  <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+                  <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                          <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                            <ul>
+                              <li style="display:none"></li>
+                            </ul>
+                          </div>
+                          <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal shadow bg-white rounded">
+                    <h3 class="title-section">Acreditaciones <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <div class="form-group">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th> Rut </th>
+                              <th> Nombre </th>
+                              <th> Parentesco </th>
+                              <th> Servicio Militar (1) </th>
+                              <th> Comisión Valech (2) </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> 17135456-0 </td>
+                              <td> KAREN ALEJANDRA CÁCERES RUBIO </td>
+                              <td> Postulante </td>
+                              <td> No </td>
+                              <td> No </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-md-12"> (1) Identifica si el integrante cumplió servicio militar en modalidad conscripción ordinaria y valer militar, a partir del año 2004. </div>
+                    <div class="col-md-12"> (2) Identifica si el postulante o su cónyuge forma parte del Informe de la Comisión Valech. </div>
+                  </div>
+                  <div class="form-botones text-center"> <a href="/FormularioAhorro" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
+                    <input type="submit" value="Guardar y Continuar" class="btn-lg btn btn-primary">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="resumen" role="tabpanel" aria-labelledby="resumen-tab">
+            <div class="row">
+              <div class="col col-sm-12 col-md-12 formulario">
+                <div class="page-header mb-4">
+                  <h1>Resumen de la postulación</h1>
+                </div>
+                <form action="/FormularioResumen/Postular" id="formResumen" method="post" novalidate="novalidate">
+                  <input name="__RequestVerificationToken" type="hidden" value="Uajmu1aeClKCuvlIiNVeH8a6GhNRjhFWiBoRxD4auuyqxdh9iJrc8fazZKqGfo8ewUZSnhI6WRHJvCadZzrSm7U4BwtrsG3l8QuLA7P-fMQ3ZjUDrOtjto43wdsTvUwaO08KXBIYxqEqF5CNpdQzBg2">
+                  <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+                  <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                          <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                            <ul>
+                              <li style="display:none"></li>
+                            </ul>
+                          </div>
+                          <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="resumen">
+                    <div class="box-resumen">
+                      <h2 class="panel-title"> Información del Postulante </h2>
+                      <div class="form-horizontal shadow bg-white rounded">
+                        <h3 class="title-section">Información del Postulante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                        <div class="form-group row">
+                          <div class="col-md-4">
+                            <label class="control-label" for="formIdentificacion_Persona_Rut_RutCompleto">Rut: </label>
+                            <div class="control-display"> 17135456-0 </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formIdentificacion_Persona_NombreCompleto">Nombre: </label>
+                            <div class="control-display"> KAREN ALEJANDRA CÁCERES RUBIO </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formIdentificacion_Persona_EstadoCivil">Estado Civil: </label>
+                            <div class="control-display"> Soltero/a </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formIdentificacion_Persona_FechaNacimiento">Fecha de nacimiento: </label>
+                            <div class="control-display"> 25-01-1989 </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formIdentificacion_Persona_Sexo">Género: </label>
+                            <div class="control-display"> Femenino </div>
+                          </div>
+                        </div>
+                        <h3 class="title-section">Domicilio <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                        <div class="form-group row">
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_Calle">Calle (*): </label>
+                            <div class="control-display"> CALLE, SEBASTIAN ELCANO </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_Numero">Número (*): </label>
+                            <div class="control-display"> 112 </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_Departamento">Departamento: </label>
+                            <div class="control-display"> </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_Block">Block: </label>
+                            <div class="control-display"> </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_Manzana">Manzana: </label>
+                            <div class="control-display"> </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_Sitio">Sitio: </label>
+                            <div class="control-display"> </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_idRegion">Región (*): </label>
+                            <div class="control-display"> REGIÓN DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Domicilio_idComuna">Comuna (*): </label>
+                            <div class="control-display"> RANCAGUA </div>
+                          </div>
+                        </div>
+                        <h3 class="title-section resumen">Contacto <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                        <div class="form-group row">
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Contacto_TelefonoTrabajo">Teléfono de trabajo (**): </label>
+                            <div class="control-display"> </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Contacto_TelefonoMovil">Teléfono móvil (**): </label>
+                            <div class="control-display"> 975939186 </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Contacto_TelefonoDomicilio">Teléfono de domicilio (**): </label>
+                            <div class="control-display"> </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="control-label" for="formContacto_Contacto_Email">E-Mail (*): </label>
+                            <div class="control-display"> <a href="mailto:ncousino@minvu.cl">ncousino@minvu.cl</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					<div class="box-resumen">  
+                    <h2 class="panel-title"> Información de los Datos de la Postulación y Núcleo Familiar </h2>
+                    <div class="form-horizontal shadow bg-white rounded">
+                      <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <div class="form-group row">
+                        <div class="col-md-4">
+                          <label class="control-label" for="formNucleo_DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
+                          <div class="control-display"> D.S. 49, (V. y U.) de 2011 </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formNucleo_DatosPostulacion_Modalidad">Modalidad de postulación: </label>
+                          <div class="control-display"> Adquisición de Vivienda Construida </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formNucleo_DatosPostulacion_idRegion">Región de preferencia (*): </label>
+                          <div class="control-display"> REGIÓN DE TARAPACÁ </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formNucleo_DatosPostulacion_idComuna">Comuna (*): </label>
+                          <div class="control-display">ALTO HOSPICIO </div>
+                        </div>
+                      </div>
+                      <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <label class="control-label" for="formNucleo_Rsh_TramoCSE">Tramo Calificación Socioeconómica: </label>
+                          <div class="control-display"> 40 </div>
+                        </div>
+                      </div>
+                      <h3 class="title-section">Núcleo Familiar <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th> Rut </th>
+                              <th> Nombre </th>
+                              <th> Edad </th>
+                              <th> Discapacidad </th>
+                              <th> Parentesco </th>
+                              <th> Incluidos en el Núcleo </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> 17135456-0 </td>
+                              <td> KAREN ALEJANDRA CÁCERES RUBIO </td>
+                              <td> 31 </td>
+                              <td> No </td>
+                              <td> Postulante </td>
+                              <td> SÍ </td>
+                            </tr>
+                            <tr>
+                              <td> 23376873-1 </td>
+                              <td> SEBASTIÁN IGNACIO CASTRO CÁCERES </td>
+                              <td> 10 </td>
+                              <td> No </td>
+                              <td> Hijo(a) </td>
+                              <td> SÍ </td>
+                            </tr>
+                            <tr>
+                              <td> 24941956-7 </td>
+                              <td> DANIEL ALEJANDRO CASTRO CÁCERES </td>
+                              <td> 5 </td>
+                              <td> No </td>
+                              <td> Hijo(a) </td>
+                              <td> SÍ </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+					 <div class="box-resumen">
+                    <h2 class="panel-title"> Información del Ahorro </h2>
+                    <div class="form-horizontal shadow bg-white rounded">
+                      <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <div class="form-group row">
+                        <div class="col-md-4">
+                          <label class="control-label" for="formAhorro_Ahorro_IdEntidadFinanciera">Entidad financiera (*): </label>
+                          <div class="control-display"> Banco Estado </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formAhorro_Ahorro_NumeroCuenta">Número de cuenta (*): </label>
+                          <div class="control-display"> 38163443306 </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formAhorro_Ahorro_FechaApertura">Fecha apertura: </label>
+                          <div class="control-display"> 03-07-2012 0:00:00 </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formAhorro_Ahorro_AhorroMinimo">Ahorro Mínimo: </label>
+                          <div class="control-display"> 10,00 </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formAhorro_Ahorro_SaldoCuentaMes">UF mes: </label>
+                          <div class="control-display"> 30,822 </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label" for="formAhorro_Ahorro_SaldoCuentaDia">UF día: </label>
+                          <div class="control-display"> 30,826 </div>
+                        </div>
+                      </div>
+                    </div>
+					</div>
+						</div>
+					 <div class="box-resumen">	
+                    <h2 class="panel-title"> Información de las Acreditaciones </h2>
+                    <div class="form-horizontal shadow bg-white rounded">
+                      <h3 class="title-section">Acreditaciones <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <div class="form-group row">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th> Rut </th>
+                                <th> Nombre </th>
+                                <th> Parentesco </th>
+                                <th> Servicio Militar (1) </th>
+                                <th> Comisión Valech (2) </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td> 17135456-0 </td>
+                                <td> KAREN ALEJANDRA CÁCERES RUBIO </td>
+                                <td> Postulante </td>
+                                <td> No </td>
+                                <td> No </td>
+                              </tr>
+                              <tr>
+                                <td> 23376873-1 </td>
+                                <td> SEBASTIÁN IGNACIO CASTRO CÁCERES </td>
+                                <td> Hijo(a) </td>
+                                <td> No </td>
+                                <td> No aplica </td>
+                              </tr>
+                              <tr>
+                                <td> 24941956-7 </td>
+                                <td> DANIEL ALEJANDRO CASTRO CÁCERES </td>
+                                <td> Hijo(a) </td>
+                                <td> No </td>
+                                <td> No aplica </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+					</div>	 
+                  </div>
+                  <div class="alert alert-danger">
+                    <input class="" id="autorizacionDatos" name="autorizacionDatos" type="checkbox" value="true">
+                    <input name="autorizacionDatos" type="hidden" value="false">
+                    Autorizo al SERVIU para que me comunique vía correo electrónico el resultado de mi postulación y en caso de resultar seleccionado,
+                    recibir información de terceros y del propio SERVIU, sobre disponibilidad de viviendas u otros que puedan
+                    orientarme en la elección de una solución habitacional. </div>
+                  
+                  <!--Botones-->
+                  
+                  <div class="form-botones text-center"> <a href="/FormularioAcreditaciones" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
+                    <input type="button" value="Finalizar Postulación" class="btn-lg btn btn-success" name="btnFinalizarPos" onclick="FinalizarPostulacion();">
+                  </div>
+                  
+                  <!--Modal autoriza info de terceros-->
+                  <div class="modal fade" id="AutTercerosFinPos" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="ModalLabel">¡Importante!</h4>
+                        </div>
+                        <div class="modal-body" style="text-align:center">
+                          <p>Estimad@ KAREN ALEJANDRA CÁCERES RUBIO </p>
+                          <p> ¿Autoriza al SERVIU para que le comunique vía correo electrónico el resultado de su postulación y en caso de resultar seleccionado,
+                            recibir información de terceros y del propio SERVIU, sobre disponibilidad de viviendas u otros que puedan
+                            orientarlo en la elección de una solución habitacional? </p>
+                          <input type="submit" class="btn-lg btn btn-primary" onclick="MarcaCheckAutorizaFinalizaPost(true)" value="Sí">
+                          <input type="submit" class="btn-lg btn btn-default" onclick="MarcaCheckAutorizaFinalizaPost(false)" value="No">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container-fluid">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-md-2 logo mb-3"> <img src="images/logo-minvu.svg" alt="http://Minvu"> </div>
+        <div class="col-md-10 text-right">
+          <div class="contacto p-3"> MINVU ALO: <a href="tel:6009011111" class="fono1" title="Teléfono"><i class="fas fa-phone"></i> 600 901 11 11</a> <a href="tel:0229011111" class="fono1" title="Teléfono"><i class="fas fa-mobile-alt"></i> 02 2 901 11 11</a></div>
+          <ul class="redes">
+            <li>Síguenos</li>
+            <li> <a href="https://www.minvu.cl/contactenos/formulario-de-contacto/" title="Contacto"><i class="fab fas fa-envelope-square"></i></a> </li>
+            <li> <a href="https://twitter.com/Minvu" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a> </li>
+            <li> <a href="https://www.facebook.com/MinvuChile" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a> </li>
+            <li> <a href="https://www.youtube.com/user/Minvuchile" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a> </li>
+            <li> <a href="https://www.instagram.com/minvuchile/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a> </li>
+            <li> <a href="https://www.flickr.com/photos/minvu/sets/" target="_blank" title="Flickr"><i class="fab fa-flickr"></i></a> </li>
+          </ul>
+          <p class="text-light mb-2">Alameda 924, Santiago, Chile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+</script>
+</body>
+</html>

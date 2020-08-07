@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal de Postulación</title>
+<link rel="icon" type="image/png" href="images/favicon.ico" />
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/all.css" rel="stylesheet">
+<link href="css/ds49.css" rel="stylesheet">
+<!--load all styles --> 
+<script defer src="js/all.js"></script> <!--load all styles --> 
+<script defer src="js/step.js"></script> <!--load all styles -->
+</head>
+<body>
+<div class="ds49">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary"> <a class="navbar-brand" href="#">
+    <h2>Subsidio D.S. N°49</h2>
+    <span>Postulación en línea</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-end w-100">
+        <li class="nav-item dropdown pt-2"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> KAREN ALEJANDRA CÁCERES RUBIO </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Salir</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link manual" href="#"><i class="fas fa-info-circle"></i> Manual de Postulacion</a> </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- body code goes here -->
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-sm-12 col-md-12 formulario">
+      <div class="page-header mb-4">
+        <h1>Portal de Postulación</h1>
+      </div>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <strong>¡Importante!</strong> <br>
+        Usted dispone de 15 minutos para completar su postulación, de lo contrario deberá ingresar nuevamente y continuar. <br>
+        Si los datos desplegados no coinciden con su realidad, debe acercarse al SERVIU más cercano reservando su hora <strong><a href="http://portalsiac.minvu.cl/" target="_blank">aquí</a></strong>. </div>
+      <h3 class="title-section">Información del Postulante</h3>
+      <form action="/FormularioPortal" id="formPortal" method="post" novalidate="novalidate">
+        <input name="__RequestVerificationToken" type="hidden" value="VbrmZVKIYdhy9T7cNUbat0q92koHByhvbJkUG_CarLzw1TytKQIEgR1vrpzp_IKhbQARwn154vw7LR3Ik-zLLAqiZE6UTBA3dEOogZpnoX0szz_JeB0s520YzkTl5ZKIOjFxtJBxwIncmd2wJaZDPQ2">
+        <script type="text/javascript">
+    $(document).ready(function () {
+
+        var isValid = 'true';
+
+        if (isValid != 'true') {
+            $('#ValidationModal').modal('show');
+        }
+
+    });
+
+</script>
+        <div class="modal fade" id="ValidationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                <h4 class="modal-title" id="ModalLabel">Observaciones</h4>
+              </div>
+              <div class="modal-body">
+                <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary">
+                  <ul>
+                    <li style="display:none"></li>
+                  </ul>
+                </div>
+                <span id="mensajeValidacionAux" class="validation-summary-errors"></span> </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Informacion Persona-->
+        <div class="form-horizontal"> 
+          
+          <!--Hidden Stuff-->
+          <input data-val="true" data-val-required="Los nombres son obligatorio." id="Persona_Nombres" name="Persona.Nombres" type="hidden" value="KAREN ALEJANDRA">
+          <input data-val="true" data-val-required="El apellido paterno es obligatorio." id="Persona_ApellidoPaterno" name="Persona.ApellidoPaterno" type="hidden" value="CÁCERES">
+          <input id="Persona_ApellidoMaterno" name="Persona.ApellidoMaterno" type="hidden" value="RUBIO">
+          <input data-val="true" data-val-required="El genero es obligatorio." id="Persona_Sexo" name="Persona.Sexo" type="hidden" value="Femenino">
+          <input type="hidden" id="hdn_estado_civil" value="1">
+          <div class="form-group row p-4">
+            <div class="col-md-4">
+              <label class="control-label" for="Persona_Rut_RutCompleto">Rut: </label>
+              <div class="control-display"> 17135456-0 </div>
+            </div>
+            <div class="col-md-4">
+              <label class="control-label" for="Persona_NombreCompleto">Nombre: </label>
+              <div class="control-display"> KAREN ALEJANDRA CÁCERES RUBIO </div>
+            </div>
+            <div class="col-md-4">
+              <label class="control-label" for="Llamado_Nombre">Llamado vigente: </label>
+              <div class="control-display"> Llamado Individual Res 947-2019 </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <h4 class="card-header">Solicitud de postulación</h4>
+          <div class="card-body"> 
+            <!--Solicitudes de postulacion--> 
+            
+            <!-- Notificación de ejemplo -->
+            <p class="card-text"> Solicitudes de postulación realizadas por usted. <br>
+              Si una vez finalizada la postulación, se percata de que ha cometido un error involuntario en la digitación de la información, favor solicite la eliminación de su postulación, ingresando <strong><a href="http://portalsiac.minvu.cl/" target="_blank">aquí</a></strong> o acérquese al SERVIU más cercano para regularizar su postulación </p>
+            <input type="hidden" id="hdn_estado_solicitud" value="4">
+            <div class="table-responsive mt-4 mb-2 ">
+              <table class="table table-bordered bg-white">
+                <thead>
+                  <tr>
+                    <th> Llamado </th>
+                    <th> Fecha </th>
+                    <th> Estado </th>
+                    <th> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Llamado Individual Res 947-2019 </td>
+                    <td> 02-07-2020 9:34:39 </td>
+                    <td> Detenido Paso 4 de 6 </td>
+                    <td><input data-val="true" data-val-number="The field idSolicitud must be a number." data-val-required="The idSolicitud field is required." id="hdnIdSolicitud" name="Solicitud.idSolicitud" type="hidden" value="205014">
+                      <a href="form1.html" id="btnSave" value="Continuar" name="Command" class="btn-lg btn btn-primary">Continuar</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+       
+        <div class="modal fade" id="FinProcesoDialog" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                <h4 class="modal-title" id="ModalLabel">¡Importante!</h4>
+              </div>
+              <div class="modal-body" style="text-align:center">
+                <p>Estimad@ KAREN ALEJANDRA CÁCERES RUBIO</p>
+                <p>¡El proceso de postulación ha finalizado de forma exitosa!</p>
+                <p>Ahora puede <strong>descargar el comprobante de su postulación</strong> desde el portal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="UnionCivil" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                <h4 class="modal-title" id="ModalLabel">¡Importante!</h4>
+              </div>
+              <div class="modal-body" style="text-align:center">
+                <p>Estimad@ KAREN ALEJANDRA CÁCERES RUBIO</p>
+                <p>No es posible cursar su postulación en línea, debido a que su estado civíl no ha sido informado por el Servicio de Registro Civíl e Identificación.</p>
+                <p>Para efectuar su postulación debe acercarse al SERVIU más cercano reservando su hora <strong><a href="http://portalsiac.minvu.cl/" target="_blank">aquí</a></strong>.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="modal fade" id="loading">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body" style="text-align:center">
+              <p><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Espere mientras se realizan las validaciones necesarias para continuar con su postulación.</p>
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal -->
+      
+      <div class="modal fade" id="loadingBanco">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body" style="text-align:center">
+              <p><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Espere mientras se realiza la consulta a su entidad financiera.</p>
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container-fluid">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-md-2 logo mb-3"> <img src="images/logo-minvu.svg" alt="http://Minvu"> </div>
+        <div class="col-md-10 text-right">
+          <div class="contacto p-3"> MINVU ALO: <a href="tel:6009011111" class="fono1" title="Teléfono"><i class="fas fa-phone"></i> 600 901 11 11</a> <a href="tel:0229011111" class="fono1" title="Teléfono"><i class="fas fa-mobile-alt"></i> 02 2 901 11 11</a></div>
+          <ul class="redes">
+            <li>Síguenos</li>
+            <li> <a href="https://www.minvu.cl/contactenos/formulario-de-contacto/" title="Contacto"><i class="fab fas fa-envelope-square"></i></a> </li>
+            <li> <a href="https://twitter.com/Minvu" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a> </li>
+            <li> <a href="https://www.facebook.com/MinvuChile" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a> </li>
+            <li> <a href="https://www.youtube.com/user/Minvuchile" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a> </li>
+            <li> <a href="https://www.instagram.com/minvuchile/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a> </li>
+            <li> <a href="https://www.flickr.com/photos/minvu/sets/" target="_blank" title="Flickr"><i class="fab fa-flickr"></i></a> </li>
+          </ul>
+          <p class="text-light mb-2">Alameda 924, Santiago, Chile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
