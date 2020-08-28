@@ -49,6 +49,7 @@
 #footer {
     background: #0A132D url("../images/footer-trama-b.png") top center;
 }
+.footer_top{padding-top: 1em;}
 .redes li {
     display: inline-block;
     padding-right: 3px;
@@ -116,6 +117,12 @@
     display: block;
 }
 }
+@media (max-width: 800px) {
+.logo-campana {
+    
+    display: none;
+}
+}
 
 .formulario{ padding: 1em 2em; border: 1px solid #ccc;margin-top: -1px; margin-bottom: 1em;}
 .title-section{border-bottom: 1px solid rgba(232,232,232,0.7); padding-bottom: 0.8em; margin-bottom: 0.8em; font-size: 1.4em; color: #4b2a79;}
@@ -137,7 +144,7 @@ font-size: 2em;
 .box-resumen{}
 .box-resumen .panel-title{font-size: 1.6em;font-weight: 200;}
 
-
+.contrato{padding-bottom: 2em;}
 /************************** PASO A PASO *************************************/
 /************************** PASO A PASO *************************************/
 /************************** PASO A PASO *************************************/
@@ -203,3 +210,55 @@ font-size: 2em;
     
 }
 }
+
+@media only screen and (max-width: 1400px) {
+	
+	/* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-bottom: 3px solid #ccc;margin-bottom: 1em; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		/*white-space: normal;*/
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding 
+		top: 6px;*/
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		/*white-space: nowrap;*/
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+	#no-more-tables td:after { content: attr(data-description); font-size: 0.8em; display: block;}
+}
+
