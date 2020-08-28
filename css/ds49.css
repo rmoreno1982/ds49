@@ -190,3 +190,16 @@ font-size: 2em;
 	z-index: 999;
 }
 
+@media (max-width: 560px) {
+.process-step{display:block;width: 100%;}
+.formulario {
+    padding: 1em;
+    border: none;
+    
+}
+	.wizard .formulario {
+    padding: 1em 0;
+    border: none;
+    
+}
+}
