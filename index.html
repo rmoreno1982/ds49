@@ -34,17 +34,13 @@
       <div class="col col-sm-6 col-md-8 p-0">
         <div class="jumbotron ds49">
           <h1 class="display-4">Bienvenido/a</h1>
-          <p class="lead"><strong>Este sistema permite postular al SUBSIDIO D.S.49, en la modalidad de postulación individual. </strong><br>
+          <p class="lead"><strong>Este sistema permite postular al programa Fondo Solidario de Elección de Vivienda (D.S.49), en la modalidad de postulación individual.</strong><br>
             <br>
-            Este subsidio permite a familias que no son dueñas de una vivienda, viven en situación
-            de vulnerabilidad social y pertenecen al 40% de la población con menos recursos de
-            acuerdo al Registro Social de Hogares (RSH), comprar una vivienda (casa o
-            departamento) sin crédito hipotecario cuyo valor no puede superar las 950 UF
-            ($27.226.000 aproximadamente).<br>
+            Este <strong>subsidio permite</strong> a familias que no son dueñas de una vivienda, viven en situación de vulnerabilidad social y pertenecen al 40% de la población con menos recursos de acuerdo al Registro Social de Hogares (RSH), comprar una vivienda (casa o departamento) sin crédito hipotecario cuyo valor no puede superar las 950 UF ($27.233.000 aproximadamente). <br>
             <br>
-            Este subsidio también se puede aplicar en proyectos de construcción que tengan
-            viviendas disponibles. En este caso, el monto del subsidio será igual a los montos
-            regulares del proyecto elegido. <br>
+            Este subsidio <strong>también se puede aplicar en proyectos de construcción que tengan viviendas disponibles.</strong> En este caso, el monto del subsidio será igual a los montos regulares del proyecto elegido.
+
+			<br>
             <br>
           </p>
 			<hr class="my-4">
@@ -105,29 +101,67 @@
               <input type="text" class="form-control" id="exampleInputPassword1" placeholder="000000000">
               <a href="" data-toggle="modal" data-target="#modalcarnet"><small class="form-text text-muted"><i class="fas fa-info-circle"></i> ¿Dónde encuentro este número?</small> </a></div>
             
-            <!-- Modal -->
-            <div class="modal fade" id="modalcarnet" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <div class="container-fluid">
+  	  
+			  
+			  <!-- Modal -->
+<div class="modal fade" id="modalcarnet" tabindex="-1" role="dialog" aria-labelledby="modalcarnetLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Serie de Cédula</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="container-fluid">
                       <div class="row">
-                        <div class="col-md-6">Carnet Nuevo<br>
-                          <img src="images/SD_CI_320.png" class="img-fluid" alt=""/></div>
-                        <div class="col-md-6 ml-auto">Carnet Antiguo<br>
-                          <img src="images/SD_CI_320.png" class="img-fluid" alt=""/></div>
+                        <div class="col-md-6">Cédula Nueva<br>
+                          <img src="images/SD_ CI NUEVA VF.png" class="img-fluid" alt=""/></div>
+                        <div class="col-md-6 ml-auto">Cédula Antigua<br>
+                          <img src="images/SD_ CI ANTIGUA VF.png" class="img-fluid" alt=""/></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+	  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button> 
+      </div>
+    </div>
+  </div>
+</div>
             
             <a href="form.html" class="btn btn-primary">Siguiente</a>
+			 
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalejemplo">Ejemplo de Modal</button>  
             
+			  
+			<!-- Modal Ejemplo -->
+            <div class="modal fade" id="modalejemplo" tabindex="-1" role="dialog" aria-labelledby="modalejemploLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Titulo de Contenido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		 <hr>
+		  <div class="alert alert-primary" role="alert">
+  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+		  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button> 
+      </div>
+    </div>
+  </div>
+</div>
+			  
+			  <!-- Fin de Modal Ejemplo -->
+			  
           </form>
         </div>
       </div>

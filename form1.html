@@ -368,8 +368,8 @@
                     <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-6">
-                        <label class="control-label col-md-4" for="DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
-                        <div class="control-display col-md-8"> D.S. 49, (V. y U.) de 2011 </div>
+                        <label class="control-label" for="DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
+                        <div class="control-display"> D.S. 49, (V. y U.) de 2011 </div>
                       </div>
                       <div class="col-md-6">
                         <label class="control-label" for="DatosPostulacion_Modalidad">Modalidad de postulación: </label>
@@ -437,19 +437,21 @@
 <li>Si usted resulta beneficiada/o, las personas mayores de 18 años declaradas como parte de su núcleo familiar estarán impedidas de postular por si mismos o como parte de otro núcleo familiar a un  subsidio habitacional, por un plazo de 3 años.</li></ol>
 </div>
                   <div class="table-responsive" id="nucleoFamiliar">
+					<div id="no-more-tables">
                     <table class="table">
                       <thead>
                         <tr>
                           <th> Rut </th>
                           <th> Nombre </th>
-                          <th> Edad </th>
-                          <th> Discapacidad </th>
-                          <th> Parentesco </th>
-                          <th> Incluir al Núcleo </th>
-                          <th> Serie <span id="infoCI" class="glyphicon glyphicon-info-sign" data-original-title="" title=""></span> </th>
-                          <th> Cuerpo de Bomberos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si usted o uno de los integrantes de su núcleo familiar pertenece al cuerpo de bomberos, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
-						  <th> Gendarmería <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si usted o su cónyuge o conviviente civil, es funcionario de gendarmería de chile, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
-							<th> CONADI <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Marque este check si  usted postula sin acreditar núcleo familiar, perteneciendo al registro conadi y no cuenta con apellido indígena. posteriormente se le solicitará el certificado para acreditarlo.  /  si usted postula sin núcleo familiar, es parte de los registros de conadi y cuenta con apellido indígena, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
+                          <th class="numeric"> Edad </th>
+                          <th class="numeric"> Discapacidad </th>
+                          <th class="numeric"> Parentesco </th>
+                          <th class="numeric"> Incluir al Núcleo </th>
+                          <th class="numeric"> Serie <span id="infoCI" class="glyphicon glyphicon-info-sign" data-original-title="" title=""></span> </th>
+                          <th class="numeric"> Cuerpo de Bomberos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si usted o uno de los integrantes de su núcleo familiar pertenece al cuerpo de bomberos, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
+						  <th class="numeric"> Gendarmería <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si usted o su cónyuge o conviviente civil, es funcionario de gendarmería de chile, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
+							<th class="numeric"> CONADI <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Marque este check si  usted postula sin acreditar núcleo familiar, perteneciendo al registro conadi y no cuenta con apellido indígena. posteriormente se le solicitará el certificado para acreditarlo.  /  si usted postula sin núcleo familiar, es parte de los registros de conadi y cuenta con apellido indígena, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
+							<th class="numeric"> DGMN <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="texto de ayuda explicando que es esto"><i class="fas fa-question-circle"></i></a></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -462,18 +464,19 @@
                       <input data-val="true" data-val-date="The field Fecha de nacimiento:  must be a date." data-val-required="La fecha de nacimiento es obligatoria." id="Integrantes_0__FechaNacimiento" name="Integrantes[0].FechaNacimiento" type="hidden" value="25-01-1989 0:00:00">
                       <input data-val="true" data-val-number="The field idNacionalidad must be a number." id="Integrantes_0__idNacionalidad" name="Integrantes[0].idNacionalidad" type="hidden" value="56">
                       <tr>
-                        <td> 17135456-0 </td>
-                        <td> KAREN ALEJANDRA CÁCERES RUBIO </td>
-                        <td> 31 </td>
-                        <td> No </td>
-                        <td> Postulante
+                        <td data-title="Rut"> 17135456-0 </td>
+                        <td data-title="Nombre"> KAREN ALEJANDRA CÁCERES RUBIO </td>
+                        <td data-title="Edad"> 31 </td>
+                        <td data-title="Discapacidad"> No </td>
+                        <td data-title="Parentesco"> Postulante
                           <input data-val="true" data-val-number="The field idParentesco must be a number." data-val-required="The idParentesco field is required." id="Integrantes_0__idParentesco" name="Integrantes[0].idParentesco" type="hidden" value="17"></td>
-                        <td><input type="checkbox" disabled="disabled" checked=""></td>
-                        <td><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_0" name="Integrantes[0].SerieCedula" style="display:none;" type="text" value="">
+                        <td data-title="Incluir al Núcleo"><input type="checkbox" disabled="disabled" checked=""></td>
+                        <td data-title="Serie"><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_0" name="Integrantes[0].SerieCedula" type="text" value="A0000000000">
                           <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Integrantes[0].SerieCedula" data-valmsg-replace="true"></span></div></td>
-                        <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
-						  <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
-						  <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+						  <td data-title="Cuerpo de Bomberos" data-description="Si usted o uno de los integrantes de su núcleo familiar pertenece al cuerpo de bomberos, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+						  <td data-title="Gendarmería" data-description="Si usted o su cónyuge o conviviente civil, es funcionario de gendarmería de chile, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="check" id="check" class="check"></td>
+						  <td data-title="CONADI" data-description="Marque este check si  usted postula sin acreditar núcleo familiar, perteneciendo al registro conadi y no cuenta con apellido indígena. posteriormente se le solicitará el certificado para acreditarlo.  /  si usted postula sin núcleo familiar, es parte de los registros de conadi y cuenta con apellido indígena, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="check" id="check" class="check"></td>
+						  <td data-title="DGMN" data-description="Texto de ayuda que explique lo que es la Etiqueta"> No </td>
                       </tr>
                       <input data-val="true" data-val-required="Los nombres son obligatorio." id="Integrantes_1__Nombres" name="Integrantes[1].Nombres" type="hidden" value="SEBASTIÁN IGNACIO">
                       <input data-val="true" data-val-length="El largo máximo son 12 caracteres." data-val-length-max="12" data-val-regex="El rut ingresado no es válido." data-val-regex-pattern="^0*(\d{1,3}(\d{3})*)\-([\dkK])" data-val-required="El rut es obligatorio." id="Integrantes_1__Rut_RutCompleto" name="Integrantes[1].Rut.RutCompleto" type="hidden" value="23376873-1">
@@ -484,19 +487,20 @@
                       <input data-val="true" data-val-date="The field Fecha de nacimiento:  must be a date." data-val-required="La fecha de nacimiento es obligatoria." id="Integrantes_1__FechaNacimiento" name="Integrantes[1].FechaNacimiento" type="hidden" value="18-07-2010 0:00:00">
                       <input data-val="true" data-val-number="The field idNacionalidad must be a number." id="Integrantes_1__idNacionalidad" name="Integrantes[1].idNacionalidad" type="hidden" value="56">
                       <tr>
-                        <td> 23376873-1 </td>
-                        <td> SEBASTIÁN IGNACIO CASTRO CÁCERES </td>
-                        <td> 10 </td>
-                        <td> No </td>
-                        <td> Hijo(a)
+                        <td data-title="Rut"> 23376873-1 </td>
+                        <td data-title="Nombre"> SEBASTIÁN IGNACIO CASTRO CÁCERES </td>
+                        <td data-title="Edad"> 10 </td>
+                        <td data-title="Discapacidad"> No </td>
+                        <td data-title="Parentesco"> Hijo(a)
                           <input data-val="true" data-val-number="The field idParentesco must be a number." data-val-required="The idParentesco field is required." id="Integrantes_1__idParentesco" name="Integrantes[1].idParentesco" type="hidden" value="3"></td>
-                        <td><input data-val="true" data-val-required="The IncorporacionNucleo field is required." id="chk_Integrante_1" name="Integrantes[1].IncorporacionNucleo" onclick="modificarIncluir(this,1)" type="checkbox" value="true">
+                        <td data-title="Incluir al Núcleo"><input data-val="true" data-val-required="The IncorporacionNucleo field is required." id="chk_Integrante_1" name="Integrantes[1].IncorporacionNucleo" onclick="modificarIncluir(this,1)" type="checkbox" value="true">
                           <input name="Integrantes[1].IncorporacionNucleo" type="hidden" value="false"></td>
-                        <td><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_1" name="Integrantes[1].SerieCedula" style="display:none;" type="text" value="">
+                        <td data-title="Serie"><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_1" name="Integrantes[1].SerieCedula" type="text" value="A0000000000">
                           <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Integrantes[1].SerieCedula" data-valmsg-replace="true"></span></div></td>
-                        <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
-						   <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
-						  <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+                        <td data-title="Cuerpo de Bomberos" data-description="Si usted o uno de los integrantes de su núcleo familiar pertenece al cuerpo de bomberos, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+						   <td data-title="Gendarmería" data-description="Si usted o su cónyuge o conviviente civil, es funcionario de gendarmería de chile, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="check" id="check" class="check"></td>
+						  <td data-title="CONADI" data-description="Marque este check si  usted postula sin acreditar núcleo familiar, perteneciendo al registro conadi y no cuenta con apellido indígena. posteriormente se le solicitará el certificado para acreditarlo.  /  si usted postula sin núcleo familiar, es parte de los registros de conadi y cuenta con apellido indígena, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="check" id="check" class="check"></td>
+						  <td data-title="DGMN" data-description="Texto de ayuda que explique lo que es la Etiqueta"> No </td>
                       </tr>
                       <input data-val="true" data-val-required="Los nombres son obligatorio." id="Integrantes_2__Nombres" name="Integrantes[2].Nombres" type="hidden" value="DANIEL ALEJANDRO">
                       <input data-val="true" data-val-length="El largo máximo son 12 caracteres." data-val-length-max="12" data-val-regex="El rut ingresado no es válido." data-val-regex-pattern="^0*(\d{1,3}(\d{3})*)\-([\dkK])" data-val-required="El rut es obligatorio." id="Integrantes_2__Rut_RutCompleto" name="Integrantes[2].Rut.RutCompleto" type="hidden" value="24941956-7">
@@ -507,23 +511,25 @@
                       <input data-val="true" data-val-date="The field Fecha de nacimiento:  must be a date." data-val-required="La fecha de nacimiento es obligatoria." id="Integrantes_2__FechaNacimiento" name="Integrantes[2].FechaNacimiento" type="hidden" value="28-03-2015 0:00:00">
                       <input data-val="true" data-val-number="The field idNacionalidad must be a number." id="Integrantes_2__idNacionalidad" name="Integrantes[2].idNacionalidad" type="hidden" value="56">
                       <tr>
-                        <td> 24941956-7 </td>
-                        <td> DANIEL ALEJANDRO CASTRO CÁCERES </td>
-                        <td> 5 </td>
-                        <td> No </td>
-                        <td> Hijo(a)
+                        <td data-title="Rut"> 24941956-7 </td>
+                        <td data-title="Nombre"> DANIEL ALEJANDRO CASTRO CÁCERES </td>
+                        <td data-title="Edad"> 5 </td>
+                        <td data-title="Discapacidad"> No </td>
+                        <td data-title="Parentesco"> Hijo(a)
                           <input data-val="true" data-val-number="The field idParentesco must be a number." data-val-required="The idParentesco field is required." id="Integrantes_2__idParentesco" name="Integrantes[2].idParentesco" type="hidden" value="3"></td>
-                        <td><input data-val="true" data-val-required="The IncorporacionNucleo field is required." id="chk_Integrante_2" name="Integrantes[2].IncorporacionNucleo" onclick="modificarIncluir(this,2)" type="checkbox" value="true">
+                        <td data-title="Incluir al Núcleo"><input data-val="true" data-val-required="The IncorporacionNucleo field is required." id="chk_Integrante_2" name="Integrantes[2].IncorporacionNucleo" onclick="modificarIncluir(this,2)" type="checkbox" value="true">
                           <input name="Integrantes[2].IncorporacionNucleo" type="hidden" value="false"></td>
-                        <td><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_2" name="Integrantes[2].SerieCedula" style="display:none;" type="text" value="">
+                        <td data-title="Serie"><input data-val="true" data-val-regex="Solo se permiten letras y números." data-val-regex-pattern="(^[0-9A-Z\-a-z ]*$)" disabled="disabled" id="txt_serie_2" name="Integrantes[2].SerieCedula" type="text" value="A0000000000">
                           <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Integrantes[2].SerieCedula" data-valmsg-replace="true"></span></div></td>
-                        <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
-						   <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
-						  <td style="text-align: center;"><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+                        <td data-title="Cuerpo de Bomberos" data-description="Si usted o uno de los integrantes de su núcleo familiar pertenece al cuerpo de bomberos, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="checkBomberos" id="checkBomberos" onclick="validaCuerpoBomberos();" class="checkBomberos"></td>
+						   <td data-title="Gendarmería" data-description="Si usted o su cónyuge o conviviente civil, es funcionario de gendarmería de chile, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="check" id="check" class="check"></td>
+						  <td data-title="CONADI" data-description="Marque este check si  usted postula sin acreditar núcleo familiar, perteneciendo al registro conadi y no cuenta con apellido indígena. posteriormente se le solicitará el certificado para acreditarlo.  /  si usted postula sin núcleo familiar, es parte de los registros de conadi y cuenta con apellido indígena, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><input type="checkbox" name="check" id="check" class="check"></td>
+						  <td data-title="DGMN" data-description="Texto de ayuda que explique lo que es la Etiqueta"> No </td>
                       </tr>
                       </tbody>
                       
                     </table>
+					</div>
                   </div>
                   <div class="form-botones text-center"> <a href="/FormularioContacto" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
                     <input type="submit" value="Guardar y Continuar" class="btn-lg btn btn-primary">
