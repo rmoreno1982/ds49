@@ -211,7 +211,7 @@ font-size: 2em;
 }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1280px) {
 	
 	/* Force table to not be like tables anymore */
 	#no-more-tables table, 
