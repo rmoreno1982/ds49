@@ -19,7 +19,7 @@
 <div class="ds49">
   <nav class="navbar navbar-expand-lg navbar-light bg-primary"> <a class="navbar-brand" href="#">
     <h2>Subsidio D.S. N°49</h2>
-    <span>Postulación en línea</span> </a>
+    <span>Solicitud de Postulación en línea</span> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav justify-content-end w-100">
@@ -28,7 +28,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Salir</a> </div>
         </li>
-        <li class="nav-item"> <a class="nav-link manual" href="#"><i class="fas fa-info-circle"></i> Manual de Postulacion</a> </li>
+        <li class="nav-item"> <a class="nav-link manual" href="#"><i class="fas fa-info-circle"></i> Manual para solicitud de postulación.</a> </li>
       </ul>
     </div>
   </nav>
@@ -45,7 +45,7 @@
       <div class="wizard-inner">
         <div class="process">
           <ul class="process-row nav nav-tabs" id="myTab" role="tablist">
-            <li class="process-step nav-item"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Paso 1<small>Identificación del postulante</small></a> </li>
+            <li class="process-step nav-item"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Paso 1<small>Información del o la solicitante</small></a> </li>
             <li class="process-step nav-item"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Paso 2<small>RSH y Nucleo Familiar </small></a> </li>
             <li class="process-step nav-item"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Paso 3<small>Ahorro del Postulante</small></a> </li>
             
@@ -59,7 +59,7 @@
             <div class="row">
               <div class="col col-sm-12 col-md-12 formulario">
                 <div class="page-header mb-4">
-                  <h1>Identificación del o la Postulante <small> Los datos que se detallan son obtenidos directamente desde el Servicio de Registro Civil e Identificación.</small></h1>
+                  <h1>Información del o la solicitante </h1>
                 </div>
                 <form action="/FormularioIdentificacion" id="formIdentificacion" method="post" novalidate="novalidate">
                   <input name="__RequestVerificationToken" type="hidden" value="omag-gz8mYgbO1-LiHlnfvEPBbjcwjBT6i38K4iFtDfYd3Mu2aOaqEJqlIcCMpLESWdzwrKfzXZZXzW9VOFDW8C-QXqQsfBuQNr-EnMUGBRbQipfGaYhQCdAkHo0097aZlFKHrDfW--tos3RFzReMg2">
@@ -100,7 +100,7 @@
                   <input id="Persona_ApellidoMaterno" name="Persona.ApellidoMaterno" type="hidden" value="RUBIO">
                   <input data-val="true" data-val-required="El genero es obligatorio." id="Persona_Sexo" name="Persona.Sexo" type="hidden" value="Femenino">
                   <div class="form-horizontal shadow bg-white rounded">
-                    <h3 class="title-section">Identificación del o la postulante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se detallan en esta sección son obtenidos directamente del servicio de registro civil e identificación"><i class="fas fa-question-circle"></i></a></h3>
+                    <h3 class="title-section">Identificación del o la solicitante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se detallan en esta sección se obtuvieron del Servicio de Registro Civil e Identificación."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-4">
                         <label class="control-label" for="Persona_Rut_RutCompleto">Rut: </label>
@@ -122,21 +122,27 @@
                         <label class="control-label" for="Persona_Sexo">Género: </label>
                         <div class="control-display"> Femenino </div>
                       </div>
+						<div class="col-md-4">
+                        <label class="control-label" for="Persona_Nacionalidad">Comisión Valech: <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Esta información se obtuvo de  la Comisión Nacional sobre Prisión Política y Tortura (2003) y de la Comisión Asesora para la Calificación de Detenidos Desaparecidos, Ejecutados Políticos y Víctimas de Prisión Política y Tortura (2011)."><i class="fas fa-question-circle"></i></a></label>
+                        <div class="control-display"> No </div>
+                      </div>
                       <div class="col-md-4">
                         <label class="control-label" for="Persona_Nacionalidad">Nacionalidad: </label>
                         <div class="control-display"> Extranjero </div>
                       </div>
+						
 						<div class="col-md-12 mt-3">
-						<div class="alert alert-warning" role="alert">Posteriormente, se le solicitará el certificado de permanencia definitiva</div>
+						<div class="alert alert-warning" role="alert">Si Usted es extranjero y no participó en el llamado a postulación individual 2019 para el Fondo Solidario de Elección de Vivienda (DS49), posteriormente deberá acreditar su permanencia definitiva.
+</div>
 						</div>
 					  <div class="col-md-12">	
 						 <input class="control-display" type="checkbox" value="" id="defaultCheck1">
 						  <label class="control-label" for="defaultCheck1">
 							Trámite de divorcio
 						  </label>
-							<small class="border-left pl-1 border-danger">Marque sólo si puede acreditar el inicio del divorcio a través de la copia autorizada de la demanda con constancia de notificación.</small>
+							<small class="border-left pl-1 border-danger">Marque esta casilla si Usted ya inició el trámite de divorcio y puede acreditarlo a través de la copia autorizada de la demanda  con constancia de su notificación.</small>
 						  <div class="col-md-12 mt-3">
-						<div class="alert alert-info" role="alert"><i class="fas fa-exclamation-circle"></i> Las personas separadas de hecho, cualquiera sea el régimen matrimonial bajo el cual hayan contraído matrimonio, pueden volver a postular a un subsidio habitacional siempre que acrediten haber iniciado el trámite de divorcio. Esta marca le permitirá avanzar en su postulación sin problemas. Para el pago del subsidio, deberá acreditar  el divorcio y que como resultado del divorcio no se adjudicó una vivienda o infraestructura sanitaria.</div>
+						<div class="alert alert-info" role="alert"><i class="fas fa-exclamation-circle"></i> Las personas separadas de hecho, cualquiera sea el régimen matrimonial bajo el cual hayan contraído matrimonio, pueden volver a postular a un subsidio habitacional siempre que acrediten haber iniciado el trámite de divorcio. Esta marca le permitirá avanzar en su postulación sin problemas. Para el pago del subsidio, deberá acreditar el divorcio y que no se adjudicó una vivienda o infraestructura sanitaria como resultado del mismo.</div>
 						</div>
 						</div>
                     </div>
@@ -180,7 +186,7 @@
                     </div>
                   </div>
                   <div class="form-horizontal shadow bg-white rounded">
-                    <h3 class="title-section">Domicilio <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección fueron obtenidos de su registro social de hogares. modifque la información si la dirección no es correcta."><i class="fas fa-question-circle"></i></a></h3>
+                    <h3 class="title-section">Domicilio <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares. Modifique la información si la dirección no es correcta."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-4">
                         <label class="control-label" for="Domicilio_Calle">Calle (*): </label>
@@ -303,14 +309,14 @@
                         <input class="form-control" data-val="true" data-val-equalto="Los correos deben ser idénticos." data-val-equalto-other="*.Email" id="Contacto_ConfirmacionEmail" maxlength="70" name="Contacto.ConfirmacionEmail" onpaste="return false" type="text" value="ncousino@minvu.cl">
                         <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="Contacto.ConfirmacionEmail" data-valmsg-replace="true"></span></div>
                       </div>
-						<div class="col-md-4">
-                        <label class="control-label" for="Persona_Nacionalidad">Comisión Valech: <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="La información fue obtenida de la comisión nacional sobre prisión política y tortura 2003 y comisión asesora para la calificación de detenidos desaparecidos , ejecutados políticos y víctimas de prisión politica y tortura 2011."><i class="fas fa-question-circle"></i></a></label>
-                        <div class="control-display"> No </div>
-                      </div>
+						
                     </div>
                     <div class="form-group">
                       <div class="col-md-12"> (*) Dato obligatorio.
                         (**) Al menos un dato obligatorio. </div>
+						
+						<div class="alert alert-warning mt-3">Si Usted está postulando desde el extranjero, debe contar con al menos un teléfono de contacto en Chile.</div>
+
                     </div>
                   </div>
                   <div class="form-botones text-center"> <a href="/FormularioPortal" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
@@ -328,7 +334,7 @@
             <div class="row">
               <div class="col col-sm-12 col-md-12 formulario">
                 <div class="page-header mb-4">
-                  <h1>Registro Social de Hogares y Nucleo Familiar <small> La información que aparece  en esa sección fue obtenida de su registro social de hogares (RSH)</small></h1>
+                  <h1>Registro Social de Hogares y Nucleo Familiar</h1>
                 </div>
                 <form action="/FormularioNucleo" id="formNucleo" method="post" novalidate="novalidate">
                   <input name="__RequestVerificationToken" type="hidden" value="wzBDAo7Q-AJjUcMrDBVtSvYUzpn3OZ0ifXJqRTEeC5vo9T5abEYLEPqjIIKOdfX3VBb2B0ql0y3IKJPqZtoDam9KTcvkpBv3C0u0PFKEhjzDGIRihOMY-RW_dwR_S-s2lCnFPWq2IfjLXErfBB0O-A2">
@@ -365,7 +371,7 @@
                     </div>
                   </div>
                   <div class="form-horizontal shadow bg-white rounded">
-                    <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección corresponden a la actual solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-6">
                         <label class="control-label" for="DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
@@ -414,7 +420,7 @@
                     </div>
                   </div>
                   <div class="form-horizontal shadow bg-white rounded">
-                    <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                    <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-6">
                         <label class="control-label" for="Rsh_TramoCSE">Tramo Calificación Socioeconómica: </label>
@@ -431,10 +437,11 @@
                   <div class="alert alert-info alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                     <h4 class="alert-heading">¡Importante!</h4>
-                    Si algún integrante de su núcleo es mayor de 18 años, considere estos tres elementos: 
-<ol><li>Escriba en el recuadro "número de x" el número de serie de la céula de identidad del integrante mayor de 18 años para validar su incorporación al  núcleo familiar</li>
-<li>Si usted resulta beneficiada/o, deberá entregar el formulario declaración de núcleo familiar (DJF) debidamente firmada por cada persona integrante de su núcleo mayor de 18 años.</li>
-<li>Si usted resulta beneficiada/o, las personas mayores de 18 años declaradas como parte de su núcleo familiar estarán impedidas de postular por si mismos o como parte de otro núcleo familiar a un  subsidio habitacional, por un plazo de 3 años.</li></ol>
+                    Si algún integrante de su núcleo familiar es mayor de 18 años, considere lo siguiente: 
+<ol>
+	<li>En la columna N° de documento digite el número de serie o número de documento de la cédula de identidad de cada integrante mayor de 18 años permitirá validar su postulación.</li>
+<li>Si Usted resulta beneficiada/o, deberá entregar el formulario de declaración de núcleo familiar debidamente firmado por cada integrante de su núcleo familiar mayor de 18 años. Para descargar el formulario <a href="#" target="_blank" class="bg-info text-light">pinche aquí.</a></li>
+<li>Si Usted resulta beneficiada/o, las personas mayores de 18 años declaradas como parte de su núcleo familiar estarán impedidas de postular al Fondo Solidario de Elección de Vivienda (DS49), Subsidio para la Clase Media (DS1) y Subsidio de Arriendo (DS52), por sí mismas o como parte de otro núcleo familiar, por un plazo de 3 años.</li></ol>
 </div>
                   <div class="table-responsive" id="nucleoFamiliar">
 					<div id="no-more-tables">
@@ -447,11 +454,11 @@
                           <th class="numeric"> Discapacidad </th>
                           <th class="numeric"> Parentesco </th>
                           <th class="numeric"> Incluir al Núcleo </th>
-                          <th class="numeric"> Serie <span id="infoCI" class="glyphicon glyphicon-info-sign" data-original-title="" title=""></span> </th>
-                          <th class="numeric"> Cuerpo de Bomberos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si usted o uno de los integrantes de su núcleo familiar pertenece al cuerpo de bomberos, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
-						  <th class="numeric"> Gendarmería <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si usted o su cónyuge o conviviente civil, es funcionario de gendarmería de chile, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
-							<th class="numeric"> CONADI <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Marque este check si  usted postula sin acreditar núcleo familiar, perteneciendo al registro conadi y no cuenta con apellido indígena. posteriormente se le solicitará el certificado para acreditarlo.  /  si usted postula sin núcleo familiar, es parte de los registros de conadi y cuenta con apellido indígena, marque esta casilla. posteriormente se le solicitará el certificado para acreditar esta condición."><i class="fas fa-question-circle"></i></a></th>
-							<th class="numeric"> DGMN <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="texto de ayuda explicando que es esto"><i class="fas fa-question-circle"></i></a></th>
+                          <th class="numeric"> N° de Serie <span id="infoCI" class="glyphicon glyphicon-info-sign" data-original-title="" title=""></span> </th>
+                          <th class="numeric"> Cuerpo de Bomberos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Marque esta casilla si Usted o uno de los integrantes de su núcleo familiar pertenece al Cuerpo de Bomberos. Posteriormente se le solicitará un certificado emitido por dicha institución para acreditarlo."><i class="fas fa-question-circle"></i></a></th>
+						  <th class="numeric"> Gendarmería <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Marque esta casilla si Usted o su cónyuge o conviviente civil, es funcionario de Gendarmería de Chile. Posteriormente se le solicitará un certificado emitido por dicha institución para acreditarlo."><i class="fas fa-question-circle"></i></a></th>
+							<th class="numeric"> CONADI <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Marque esta casilla si Usted postula sin núcleo familiar y es parte del registro de Conadi. Si sus apellidos no son indígenas, posteriormente se le solicitará un certificado emitido por dicha institución para acreditarlo."><i class="fas fa-question-circle"></i></a></th>
+							<th class="numeric"> DGMN <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Esta casilla estará marcada si Usted o uno de los integrantes de su núcleo familiar cumplió con el Servicio Militar en modalidad de Conscripción Ordinaria y Valer Militar a partir del año 2004. Esta información ha sido proporcionada por la Dirección General de Movilización Nacional."><i class="fas fa-question-circle"></i></a></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -542,7 +549,7 @@
             <div class="row">
               <div class="col col-sm-12 col-md-12 formulario">
                 <div class="page-header mb-4">
-                  <h1>Ahorro del Postulante<small> Declare el monto de su cuenta de ahorro para la vivienda de acuerdo a lo informado por la entidad financiera.</small></h1>
+                  <h1>Ahorro del Postulante</h1>
                 </div>
                 <form action="/FormularioAhorro" id="formAhorro" method="post" novalidate="novalidate">
                   <input name="__RequestVerificationToken" type="hidden" value="woqaDeV5PFuaAGMs0g3HzsUTu8kugBQD8fDc78FHaiulzAx5dV779QfILayIsZDD1UGRB8fUa-Wsxn8NNE0CRn79qTw6N9KH7Fee17Eq56_zVbJCR3aajCqHxsfTS7hq2WfVI9KIE9-rsvQ9oN2Sig2">
@@ -579,7 +586,8 @@
                     </div>
                   </div>
                   <div class="form-horizontal shadow bg-white rounded" id="idAhorro">
-                    <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si mantiene su dinero en alguna de las siguientes instituciones financieras, digite su número de cuenta de ahorro para la vivienda y sus datos aparacerán en forma automática:  Banco Estado, Banco Scotiabank, Coopeuch o Caja los Andes. Ai la entidad financiera donde tiene su cuenta es diferente a las mencionadas, ingrese manualmente los datos que le solicitan. Para comprobar dichos antecedentes, se le solicitará el certificado de mantención de cuenta emitido por la entidad financiera donde tiene sus ahorros."><i class="fas fa-question-circle"></i></a></h3>
+                    <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si su cuenta de ahorro para la vivienda corresponde a BancoEstado, Banco Scotiabank / Del Desarrollo, Caja de Compensación Los Andes o Cooperativa de Ahorro y Crédito Coopeuch; por favor digite el número de su cuenta y sus datos aparecerán de forma automática.
+Si la cuenta de ahorro para la vivienda corresponde a otra institución financiera, ingrese todos los datos manualmente. Para verificar los antecedentes entregados, posteriormente deberá presentar el certificado de mantención de cuenta emitido por la entidad financiera que corresponda."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-6">
                         <label class="control-label" for="Ahorro_IdEntidadFinanciera">Entidad financiera (*): </label>
@@ -630,7 +638,7 @@
             <div class="row">
               <div class="col col-sm-12 col-md-12 formulario">
                 <div class="page-header mb-4">
-                  <h1>Resumen de la postulación</h1>
+                  <h1>Resumen de la solicitud de postulación</h1>
                 </div>
                 <form action="/FormularioResumen/Postular" id="formResumen" method="post" novalidate="novalidate">
                   <input name="__RequestVerificationToken" type="hidden" value="Uajmu1aeClKCuvlIiNVeH8a6GhNRjhFWiBoRxD4auuyqxdh9iJrc8fazZKqGfo8ewUZSnhI6WRHJvCadZzrSm7U4BwtrsG3l8QuLA7P-fMQ3ZjUDrOtjto43wdsTvUwaO08KXBIYxqEqF5CNpdQzBg2">
@@ -668,9 +676,9 @@
                   </div>
                   <div class="resumen">
                     <div class="box-resumen">
-                      <h2 class="panel-title"> Identificación del o la postulante </h2>
+                      <h2 class="panel-title"> Información del o la solicitante</h2>
                       <div class="form-horizontal shadow bg-white rounded">
-                        <h3 class="title-section resumen">Identificación del o la postulante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se detallan en esta sección son obtenidos directamente del servicio de registro civil e identificación"><i class="fas fa-question-circle"></i></a></h3>
+                        <h3 class="title-section resumen">Identificación del o la postulante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se detallan en esta sección se obtuvieron del Servicio de Registro Civil e Identificación."><i class="fas fa-question-circle"></i></a></h3>
                         <div class="form-group row">
                           <div class="col-md-4">
                             <label class="control-label" for="formIdentificacion_Persona_Rut_RutCompleto">Rut: </label>
@@ -693,7 +701,7 @@
                             <div class="control-display"> Femenino </div>
                           </div>
                         </div>
-                        <h3 class="title-section resumen">Domicilio <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección fueron obtenidos de su registro social de hogares. modifque la información si la dirección no es correcta."><i class="fas fa-question-circle"></i></a></h3>
+                        <h3 class="title-section resumen">Domicilio <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares. Modifique la información si la dirección no es correcta."><i class="fas fa-question-circle"></i></a></h3>
                         <div class="form-group row">
                           <div class="col-md-4">
                             <label class="control-label" for="formContacto_Domicilio_Calle">Calle (*): </label>
@@ -752,7 +760,7 @@
 					<div class="box-resumen">  
                     <h2 class="panel-title"> Información de los Datos de la Postulación y Núcleo Familiar </h2>
                     <div class="form-horizontal shadow bg-white rounded">
-                      <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección corresponden a la actual solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
                       <div class="form-group row">
                         <div class="col-md-4">
                           <label class="control-label" for="formNucleo_DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
@@ -771,7 +779,8 @@
                           <div class="control-display">ALTO HOSPICIO </div>
                         </div>
                       </div>
-                      <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda que explique que campos se muestran en este bloque"><i class="fas fa-question-circle"></i></a></h3>
+                      <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares.
+"><i class="fas fa-question-circle"></i></a></h3>
                       <div class="form-group row">
                         <div class="col-md-12">
                           <label class="control-label" for="formNucleo_Rsh_TramoCSE">Tramo Calificación Socioeconómica: </label>
@@ -823,7 +832,8 @@
 					 <div class="box-resumen">
                     <h2 class="panel-title"> Información del Ahorro </h2>
                     <div class="form-horizontal shadow bg-white rounded">
-                      <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si mantiene su dinero en alguna de las siguientes instituciones financieras, digite su número de cuenta de ahorro para la vivienda y sus datos aparacerán en forma automática:  Banco Estado, Banco Scotiabank, Coopeuch o Caja los Andes. Ai la entidad financiera donde tiene su cuenta es diferente a las mencionadas, ingrese manualmente los datos que le solicitan. Para comprobar dichos antecedentes, se le solicitará el certificado de mantención de cuenta emitido por la entidad financiera donde tiene sus ahorros."><i class="fas fa-question-circle"></i></a></h3>
+                      <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si su cuenta de ahorro para la vivienda corresponde a BancoEstado, Banco Scotiabank / Del Desarrollo, Caja de Compensación Los Andes o Cooperativa de Ahorro y Crédito Coopeuch; por favor digite el número de su cuenta y sus datos aparecerán de forma automática.
+Si la cuenta de ahorro para la vivienda corresponde a otra institución financiera, ingrese todos los datos manualmente. Para verificar los antecedentes entregados, posteriormente deberá presentar el certificado de mantención de cuenta emitido por la entidad financiera que corresponda."><i class="fas fa-question-circle"></i></a></h3>
                       <div class="form-group row">
                         <div class="col-md-4">
                           <label class="control-label" for="formAhorro_Ahorro_IdEntidadFinanciera">Entidad financiera (*): </label>
@@ -863,14 +873,21 @@
                   <div class="alert alert-danger">
                     <input class="" id="autorizacionDatos" name="autorizacionDatos" type="checkbox" value="true">
                     <input name="autorizacionDatos" type="hidden" value="false">
-                    Autorizo al SERVIU para que me comunique vía correo electrónico el resultado de mi postulación y en caso de resultar seleccionado,
-                    recibir información de terceros y del propio SERVIU, sobre disponibilidad de viviendas u otros que puedan
-                    orientarme en la elección de una solución habitacional. </div>
+                    Autorizo al Servicio de Vivienda y Urbanización (Serviu) para:
+					<ul>
+						<li>Informarme el resultado de esta solicitud de postulación y los pasos a seguir a través del correo electrónico declarado.</li>
+					  <li>Tomar contacto conmigo para evaluar mi satisfacción con este proceso.</li>
+					  </ul>
+					  
+					 <input class="" id="autorizacionDatos" name="autorizacionDatos" type="checkbox" value="true">
+                    <input name="autorizacionDatos" type="hidden" value="false">
+Si esta solicitud resultara seleccionada, autorizo al Servicio de Vivienda y Urbanización (Serviu) para entregar mis datos de contacto a otras entidades con el fin de recibir orientación sobre disponibilidad de viviendas u otros detalles que puedan orientarme en la elección de una solución habitacional.
+					</div>
                   
                   <!--Botones-->
                   
                   <div class="form-botones text-center"> <a href="/FormularioAcreditaciones" target="_self" class=" btn btn-lg btn-danger" onclick="ShowLoading();">Volver</a>
-                    <input type="button" value="Finalizar Postulación" class="btn-lg btn btn-success" name="btnFinalizarPos" onclick="FinalizarPostulacion();">
+                    <input type="button" value="Finalizar solicitud" class="btn-lg btn btn-success" name="btnFinalizarPos" onclick="FinalizarPostulacion();">
                   </div>
                   
                   <!--Modal autoriza info de terceros-->
