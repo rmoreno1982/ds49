@@ -47,7 +47,7 @@
           <ul class="process-row nav nav-tabs" id="myTab" role="tablist">
             <li class="process-step nav-item"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Paso 1<small>Información del o la solicitante</small></a> </li>
             <li class="process-step nav-item"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Paso 2<small>RSH y Nucleo Familiar </small></a> </li>
-            <li class="process-step nav-item"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Paso 3<small>Ahorro del Postulante</small></a> </li>
+            <li class="process-step nav-item"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Paso 3<small>Ahorro del Solicitante</small></a> </li>
             
             <li class="process-step nav-item"> <a class="nav-link" id="resumen-tab" data-toggle="tab" href="#resumen" role="tab" aria-controls="resumen" aria-selected="false">Paso 4<small>Resumen de la postulación</small></a> </li>
           </ul>
@@ -370,64 +370,16 @@
                       </div>
                     </div>
                   </div>
+                  
                   <div class="form-horizontal shadow bg-white rounded">
-                    <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección corresponden a la actual solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
-                    <div class="form-group row">
-                      <div class="col-md-6">
-                        <label class="control-label" for="DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
-                        <div class="control-display"> D.S. 49, (V. y U.) de 2011 </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label class="control-label" for="DatosPostulacion_Modalidad">Modalidad de postulación: </label>
-                        <div class="control-display"> Adquisición de Vivienda Construida </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label class="control-label" for="DatosPostulacion_idRegion">Región de preferencia: </label>
-                        <select class="form-control" data-val="true" data-val-number="The field Región de preferencia (*):  must be a number." data-val-required="La región es obligatoria." id="DatosPostulacion_idRegion" name="DatosPostulacion.idRegion" onchange="getComunas(this);">
-                          <option value="">-- Seleccione Región --</option>
-                          <option selected="selected" value="1">REGIÓN DE TARAPACÁ</option>
-                          <option value="2">REGIÓN DE ANTOFAGASTA</option>
-                          <option value="3">REGIÓN DE ATACAMA</option>
-                          <option value="4">REGIÓN DE COQUIMBO</option>
-                          <option value="5">REGIÓN DE VALPARAÍSO</option>
-                          <option value="6">REGIÓN DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS</option>
-                          <option value="7">REGIÓN DEL MAULE</option>
-                          <option value="8">REGIÓN DEL BIOBÍO</option>
-                          <option value="9">REGIÓN DE LA ARAUCANÍA</option>
-                          <option value="10">REGIÓN DE LOS LAGOS</option>
-                          <option value="11">REGIÓN DE AYSÉN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO</option>
-                          <option value="12">REGIÓN DE MAGALLANES Y ANTÁRTICA CHILENA</option>
-                          <option value="13">REGIÓN METROPOLITANA DE SANTIAGO</option>
-                          <option value="14">REGIÓN DE LOS RÍOS</option>
-                          <option value="15">REGIÓN DE ARICA Y PARINACOTA</option>
-                          <option value="16">REGIÓN DE ÑUBLE</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <label class="control-label" for="DatosPostulacion_idComuna">Comuna: </label>
-                        <select class="form-control" data-val="true" data-val-number="The field Comuna (*):  must be a number." data-val-required="La comuna es obligatoria (sólo es dato informativo)." id="ddlComuna" name="DatosPostulacion.idComuna">
-                          <option value="">-- Seleccione Comuna --</option>
-                          <option selected="selected" value="1107">ALTO HOSPICIO</option>
-                          <option value="1402">CAMIÑA</option>
-                          <option value="1403">COLCHANE</option>
-                          <option value="1404">HUARA</option>
-                          <option value="1101">IQUIQUE</option>
-                          <option value="1405">PICA</option>
-                          <option value="1401">POZO ALMONTE</option>
-                        </select>
-                        <div class="col-md-12" style="text-align:right; font-size:small"><span class="field-validation-valid" data-valmsg-for="DatosPostulacion.idComuna" data-valmsg-replace="true"></span></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-horizontal shadow bg-white rounded">
-                    <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares."><i class="fas fa-question-circle"></i></a></h3>
+                    <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares, del Ministerio de Desarrollo Social y Familia."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-6">
                         <label class="control-label" for="Rsh_TramoCSE">Tramo Calificación Socioeconómica: </label>
                         <div class="control-display"> 40 </div>
                       </div>
                       <div class="col-md-6">
-                        <label class="control-label" for="Rsh_Region">Región: </label>
+                        <label class="control-label" for="Rsh_Region">Región: <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="En esta región se realizará el proceso de revisión y se determinara si esta solicitud es hábil."><i class="fas fa-question-circle"></i></a></label>
                         <div class="control-display"> LIBERTADOR GRAL B.O'HIGGINS </div>
                       </div>
                      
@@ -439,9 +391,9 @@
                     <h4 class="alert-heading">¡Importante!</h4>
                     Si algún integrante de su núcleo familiar es mayor de 18 años, considere lo siguiente: 
 <ol>
-	<li>En la columna N° de documento digite el número de serie o número de documento de la cédula de identidad de cada integrante mayor de 18 años permitirá validar su postulación.</li>
+	<li>Digite el número de serie o número de documento de la cédula de identidad de cada integrante mayor de 18 años en la columna número de serie.</li>
 <li>Si Usted resulta beneficiada/o, deberá entregar el formulario de declaración de núcleo familiar debidamente firmado por cada integrante de su núcleo familiar mayor de 18 años. Para descargar el formulario <a href="#" target="_blank" class="bg-info text-light">pinche aquí.</a></li>
-<li>Si Usted resulta beneficiada/o, las personas mayores de 18 años declaradas como parte de su núcleo familiar estarán impedidas de postular al Fondo Solidario de Elección de Vivienda (DS49), Subsidio para la Clase Media (DS1) y Subsidio de Arriendo (DS52), por sí mismas o como parte de otro núcleo familiar, por un plazo de 3 años.</li></ol>
+<li>Si Usted resulta beneficiada/o, las personas mayores de 18 años declaradas como parte de su núcleo familiar estarán impedidas de postular o de partipar como integrante de otro núcleo familiar, por un plazo de 3 años, a los siguientes subsidios: Fondo Solidario de Elección de Vivienda (DS49), Subsidio para la Clase Media (DS1) y Subsidio de Arriendo (DS52).</li></ol>
 </div>
                   <div class="table-responsive" id="nucleoFamiliar">
 					<div id="no-more-tables">
@@ -549,7 +501,7 @@
             <div class="row">
               <div class="col col-sm-12 col-md-12 formulario">
                 <div class="page-header mb-4">
-                  <h1>Ahorro del Postulante</h1>
+                  <h1>Ahorro del Solicitante</h1>
                 </div>
                 <form action="/FormularioAhorro" id="formAhorro" method="post" novalidate="novalidate">
                   <input name="__RequestVerificationToken" type="hidden" value="woqaDeV5PFuaAGMs0g3HzsUTu8kugBQD8fDc78FHaiulzAx5dV779QfILayIsZDD1UGRB8fUa-Wsxn8NNE0CRn79qTw6N9KH7Fee17Eq56_zVbJCR3aajCqHxsfTS7hq2WfVI9KIE9-rsvQ9oN2Sig2">
@@ -586,7 +538,7 @@
                     </div>
                   </div>
                   <div class="form-horizontal shadow bg-white rounded" id="idAhorro">
-                    <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si su cuenta de ahorro para la vivienda corresponde a BancoEstado, Banco Scotiabank / Del Desarrollo, Caja de Compensación Los Andes o Cooperativa de Ahorro y Crédito Coopeuch; por favor digite el número de su cuenta y sus datos aparecerán de forma automática.
+                    <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si su cuenta de ahorro para la vivienda corresponde a BancoEstado, Banco Scotiabank / Del Desarrollo, Caja de Compensación Los Andes o Cooperativa de Ahorro y Crédito Coopeuch; digite el número de su cuenta y sus datos aparecerán de forma automática.
 Si la cuenta de ahorro para la vivienda corresponde a otra institución financiera, ingrese todos los datos manualmente. Para verificar los antecedentes entregados, posteriormente deberá presentar el certificado de mantención de cuenta emitido por la entidad financiera que corresponda."><i class="fas fa-question-circle"></i></a></h3>
                     <div class="form-group row">
                       <div class="col-md-6">
@@ -678,7 +630,7 @@ Si la cuenta de ahorro para la vivienda corresponde a otra institución financie
                     <div class="box-resumen">
                       <h2 class="panel-title"> Información del o la solicitante</h2>
                       <div class="form-horizontal shadow bg-white rounded">
-                        <h3 class="title-section resumen">Identificación del o la postulante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se detallan en esta sección se obtuvieron del Servicio de Registro Civil e Identificación."><i class="fas fa-question-circle"></i></a></h3>
+                        <h3 class="title-section resumen">Identificación del o la solicitante <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se detallan en esta sección se obtuvieron del Servicio de Registro Civil e Identificación."><i class="fas fa-question-circle"></i></a></h3>
                         <div class="form-group row">
                           <div class="col-md-4">
                             <label class="control-label" for="formIdentificacion_Persona_Rut_RutCompleto">Rut: </label>
@@ -736,7 +688,7 @@ Si la cuenta de ahorro para la vivienda corresponde a otra institución financie
                             <div class="control-display"> RANCAGUA </div>
                           </div>
                         </div>
-                        <h3 class="title-section resumen">Contacto <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingrese un correo electrónico válido y al menos un número telefónico. Estos datos permitirán establecer contacto si es necesario  e informarle  sobre el  estado de su solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
+                        <h3 class="title-section resumen">Contacto <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingrese un correo electrónico válido y al menos un número telefónico. Estos datos permitirán establecer contacto si es necesario e informarle sobre el estado de su solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
                         <div class="form-group row">
                           <div class="col-md-4">
                             <label class="control-label" for="formContacto_Contacto_TelefonoTrabajo">Teléfono de trabajo (**): </label>
@@ -758,9 +710,9 @@ Si la cuenta de ahorro para la vivienda corresponde a otra institución financie
                       </div>
                     </div>
 					<div class="box-resumen">  
-                    <h2 class="panel-title"> Información de los Datos de la Postulación y Núcleo Familiar </h2>
+                    <h2 class="panel-title"> Información de los Datos de la Solicitud y Núcleo Familiar </h2>
                     <div class="form-horizontal shadow bg-white rounded">
-                      <h3 class="title-section">Datos de postulación <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección corresponden a la actual solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
+                      <h3 class="title-section">Datos de la Solicitud <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección corresponden a la actual solicitud de postulación."><i class="fas fa-question-circle"></i></a></h3>
                       <div class="form-group row">
                         <div class="col-md-4">
                           <label class="control-label" for="formNucleo_DatosPostulacion_ProgramaHabitacional">Programa habitacional: </label>
@@ -779,7 +731,7 @@ Si la cuenta de ahorro para la vivienda corresponde a otra institución financie
                           <div class="control-display">ALTO HOSPICIO </div>
                         </div>
                       </div>
-                      <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares.
+                      <h3 class="title-section">Registro Social de Hogares <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Los datos que se despliegan en esta sección se obtuvieron de su Registro Social de Hogares, del Ministerio de Desarrollo Social y Familia.
 "><i class="fas fa-question-circle"></i></a></h3>
                       <div class="form-group row">
                         <div class="col-md-12">
@@ -832,7 +784,7 @@ Si la cuenta de ahorro para la vivienda corresponde a otra institución financie
 					 <div class="box-resumen">
                     <h2 class="panel-title"> Información del Ahorro </h2>
                     <div class="form-horizontal shadow bg-white rounded">
-                      <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si su cuenta de ahorro para la vivienda corresponde a BancoEstado, Banco Scotiabank / Del Desarrollo, Caja de Compensación Los Andes o Cooperativa de Ahorro y Crédito Coopeuch; por favor digite el número de su cuenta y sus datos aparecerán de forma automática.
+                      <h3 class="title-section">Ahorro <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Si su cuenta de ahorro para la vivienda corresponde a BancoEstado, Banco Scotiabank / Del Desarrollo, Caja de Compensación Los Andes o Cooperativa de Ahorro y Crédito Coopeuch; digite el número de su cuenta y sus datos aparecerán de forma automática.
 Si la cuenta de ahorro para la vivienda corresponde a otra institución financiera, ingrese todos los datos manualmente. Para verificar los antecedentes entregados, posteriormente deberá presentar el certificado de mantención de cuenta emitido por la entidad financiera que corresponda."><i class="fas fa-question-circle"></i></a></h3>
                       <div class="form-group row">
                         <div class="col-md-4">
